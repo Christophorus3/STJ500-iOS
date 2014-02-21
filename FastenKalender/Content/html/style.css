@@ -1,0 +1,84 @@
+/* 
+    Document   : style
+    Created on : 14.02.2014, 15:36:47
+    Author     : chris
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+root { 
+    display: block;
+}
+
+body {
+    margin: 0px;
+    font-family: "Helvetica Neue";
+    font-weight: normal;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+h1.caps {
+    text-transform: uppercase;
+}
+
+.header {
+    color: white;
+    text-align: right;
+    background-color: #9770ba;
+    /* height: 44px; */
+    padding: 40px;
+    padding-bottom: 10px;
+}
+
+.imgHeader {
+    text-align: center;
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.verse {
+    color: #4d4d4d;
+    background-color: #e6e6e6;
+    text-align: left;
+    font-size: 1.2em;
+    padding: 40px;
+    
+}
+
+.content {
+    background-color: #7186b5;
+    color: #ffffff;
+    text-align: left;
+    font-size: 1.0em;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 150%;
+}
+
+.gospel {
+    background-color: #7186b5;
+    color: #ffffff;
+    text-align: left;
+    font-size: 1.0em;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 150%;
+}
+
+.gospel i {
+    color: red;
+    font-size: 0.8em;
+    font-style: italic;
+}
