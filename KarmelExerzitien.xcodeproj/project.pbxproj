@@ -223,7 +223,7 @@
 		83BABDCC1897AC5C008CDF5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BABDA51897AC5C008CDF5B /* Foundation.framework */; };
 		83BABDCD1897AC5C008CDF5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BABDA91897AC5C008CDF5B /* UIKit.framework */; };
 		83BABDD51897AC5C008CDF5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83BABDD31897AC5C008CDF5B /* InfoPlist.strings */; };
-		83BABDD71897AC5C008CDF5B /* FastenKalenderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BABDD61897AC5C008CDF5B /* FastenKalenderTests.m */; };
+		83BABDD71897AC5C008CDF5B /* KarmelExerzitienTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BABDD61897AC5C008CDF5B /* KarmelExerzitienTests.m */; };
 		83BABDE11897B064008CDF5B /* ESGOE_Wien1931_medium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83BABDE01897B064008CDF5B /* ESGOE_Wien1931_medium.jpg */; };
 		83CF6A1818B12C0A00453D5A /* Karmel Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 83CF6A1718B12C0A00453D5A /* Karmel Logo.png */; };
 		83CF6A1A18B12C1200453D5A /* ESGÖ Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 83CF6A1918B12C1200453D5A /* ESGÖ Logo.png */; };
@@ -458,22 +458,22 @@
 		83A3BE8218B66C3D00FAE861 /* 34-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "34-1.jpg"; path = "Content/images/34-1.jpg"; sourceTree = "<group>"; };
 		83A3BE8518B66C8700FAE861 /* ESDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDay.h; sourceTree = "<group>"; };
 		83A3BE8618B66C8700FAE861 /* ESDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDay.m; sourceTree = "<group>"; };
-		83BABDA21897AC5C008CDF5B /* FastenKalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastenKalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BABDA21897AC5C008CDF5B /* KarmelExerzitien.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarmelExerzitien.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BABDA51897AC5C008CDF5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		83BABDA71897AC5C008CDF5B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		83BABDA91897AC5C008CDF5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		83BABDAD1897AC5C008CDF5B /* FastenKalender-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FastenKalender-Info.plist"; sourceTree = "<group>"; };
+		83BABDAD1897AC5C008CDF5B /* KarmelExerzitien-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KarmelExerzitien-Info.plist"; sourceTree = "<group>"; };
 		83BABDAF1897AC5C008CDF5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83BABDB11897AC5C008CDF5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		83BABDB31897AC5C008CDF5B /* FastenKalender-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FastenKalender-Prefix.pch"; sourceTree = "<group>"; };
+		83BABDB31897AC5C008CDF5B /* KarmelExerzitien-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KarmelExerzitien-Prefix.pch"; sourceTree = "<group>"; };
 		83BABDB41897AC5C008CDF5B /* ESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESAppDelegate.h; sourceTree = "<group>"; };
 		83BABDB51897AC5C008CDF5B /* ESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESAppDelegate.m; sourceTree = "<group>"; };
 		83BABDC31897AC5C008CDF5B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		83BABDC91897AC5C008CDF5B /* FastenKalenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastenKalenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BABDC91897AC5C008CDF5B /* KarmelExerzitienTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarmelExerzitienTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BABDCA1897AC5C008CDF5B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		83BABDD21897AC5C008CDF5B /* FastenKalenderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FastenKalenderTests-Info.plist"; sourceTree = "<group>"; };
+		83BABDD21897AC5C008CDF5B /* KarmelExerzitienTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KarmelExerzitienTests-Info.plist"; sourceTree = "<group>"; };
 		83BABDD41897AC5C008CDF5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		83BABDD61897AC5C008CDF5B /* FastenKalenderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastenKalenderTests.m; sourceTree = "<group>"; };
+		83BABDD61897AC5C008CDF5B /* KarmelExerzitienTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KarmelExerzitienTests.m; sourceTree = "<group>"; };
 		83BABDE01897B064008CDF5B /* ESGOE_Wien1931_medium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ESGOE_Wien1931_medium.jpg; sourceTree = "<group>"; };
 		83CF6A1718B12C0A00453D5A /* Karmel Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Karmel Logo.png"; sourceTree = "<group>"; };
 		83CF6A1918B12C1200453D5A /* ESGÖ Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ESGÖ Logo.png"; sourceTree = "<group>"; };
@@ -752,8 +752,8 @@
 		83BABD991897AC5B008CDF5B = {
 			isa = PBXGroup;
 			children = (
-				83BABDAB1897AC5C008CDF5B /* FastenKalender */,
-				83BABDD01897AC5C008CDF5B /* FastenKalenderTests */,
+				83BABDAB1897AC5C008CDF5B /* KarmelExerzitien */,
+				83BABDD01897AC5C008CDF5B /* KarmelExerzitienTests */,
 				83BABDA41897AC5C008CDF5B /* Frameworks */,
 				83BABDA31897AC5C008CDF5B /* Products */,
 			);
@@ -762,8 +762,8 @@
 		83BABDA31897AC5C008CDF5B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83BABDA21897AC5C008CDF5B /* FastenKalender.app */,
-				83BABDC91897AC5C008CDF5B /* FastenKalenderTests.xctest */,
+				83BABDA21897AC5C008CDF5B /* KarmelExerzitien.app */,
+				83BABDC91897AC5C008CDF5B /* KarmelExerzitienTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -779,13 +779,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		83BABDAB1897AC5C008CDF5B /* FastenKalender */ = {
+		83BABDAB1897AC5C008CDF5B /* KarmelExerzitien */ = {
 			isa = PBXGroup;
 			children = (
 				83A3BE8418B66C6000FAE861 /* Model */,
 				8376EFA318A251A400674788 /* Content */,
 				83E6589018A62DC9004929F4 /* Kalender */,
-				83E6589118A62DEA004929F4 /* Tagesübersicht */,
+				83E6589118A62DEA004929F4 /* Tagesübersicht */,
 				83E6589218A62E2A004929F4 /* Tagesinhalt */,
 				83BABDB41897AC5C008CDF5B /* ESAppDelegate.h */,
 				83BABDB51897AC5C008CDF5B /* ESAppDelegate.m */,
@@ -798,33 +798,35 @@
 				83BABDAC1897AC5C008CDF5B /* Supporting Files */,
 				8371E40818B78B8900D5DD4B /* AboutView.xib */,
 			);
+			name = KarmelExerzitien;
 			path = FastenKalender;
 			sourceTree = "<group>";
 		};
 		83BABDAC1897AC5C008CDF5B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				83BABDAD1897AC5C008CDF5B /* FastenKalender-Info.plist */,
+				83BABDAD1897AC5C008CDF5B /* KarmelExerzitien-Info.plist */,
 				83BABDAE1897AC5C008CDF5B /* InfoPlist.strings */,
 				83BABDB11897AC5C008CDF5B /* main.m */,
-				83BABDB31897AC5C008CDF5B /* FastenKalender-Prefix.pch */,
+				83BABDB31897AC5C008CDF5B /* KarmelExerzitien-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		83BABDD01897AC5C008CDF5B /* FastenKalenderTests */ = {
+		83BABDD01897AC5C008CDF5B /* KarmelExerzitienTests */ = {
 			isa = PBXGroup;
 			children = (
-				83BABDD61897AC5C008CDF5B /* FastenKalenderTests.m */,
+				83BABDD61897AC5C008CDF5B /* KarmelExerzitienTests.m */,
 				83BABDD11897AC5C008CDF5B /* Supporting Files */,
 			);
+			name = KarmelExerzitienTests;
 			path = FastenKalenderTests;
 			sourceTree = "<group>";
 		};
 		83BABDD11897AC5C008CDF5B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				83BABDD21897AC5C008CDF5B /* FastenKalenderTests-Info.plist */,
+				83BABDD21897AC5C008CDF5B /* KarmelExerzitienTests-Info.plist */,
 				83BABDD31897AC5C008CDF5B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -845,7 +847,7 @@
 			name = Kalender;
 			sourceTree = "<group>";
 		};
-		83E6589118A62DEA004929F4 /* Tagesübersicht */ = {
+		83E6589118A62DEA004929F4 /* Tagesübersicht */ = {
 			isa = PBXGroup;
 			children = (
 				8316642918A56A7400E1A84F /* ESPageViewController.h */,
@@ -870,9 +872,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		83BABDA11897AC5C008CDF5B /* FastenKalender */ = {
+		83BABDA11897AC5C008CDF5B /* KarmelExerzitien */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83BABDDA1897AC5C008CDF5B /* Build configuration list for PBXNativeTarget "FastenKalender" */;
+			buildConfigurationList = 83BABDDA1897AC5C008CDF5B /* Build configuration list for PBXNativeTarget "KarmelExerzitien" */;
 			buildPhases = (
 				83BABD9E1897AC5C008CDF5B /* Sources */,
 				83BABD9F1897AC5C008CDF5B /* Frameworks */,
@@ -882,14 +884,14 @@
 			);
 			dependencies = (
 			);
-			name = FastenKalender;
+			name = KarmelExerzitien;
 			productName = FastenKalender;
-			productReference = 83BABDA21897AC5C008CDF5B /* FastenKalender.app */;
+			productReference = 83BABDA21897AC5C008CDF5B /* KarmelExerzitien.app */;
 			productType = "com.apple.product-type.application";
 		};
-		83BABDC81897AC5C008CDF5B /* FastenKalenderTests */ = {
+		83BABDC81897AC5C008CDF5B /* KarmelExerzitienTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83BABDDD1897AC5C008CDF5B /* Build configuration list for PBXNativeTarget "FastenKalenderTests" */;
+			buildConfigurationList = 83BABDDD1897AC5C008CDF5B /* Build configuration list for PBXNativeTarget "KarmelExerzitienTests" */;
 			buildPhases = (
 				83BABDC51897AC5C008CDF5B /* Sources */,
 				83BABDC61897AC5C008CDF5B /* Frameworks */,
@@ -900,9 +902,9 @@
 			dependencies = (
 				83BABDCF1897AC5C008CDF5B /* PBXTargetDependency */,
 			);
-			name = FastenKalenderTests;
+			name = KarmelExerzitienTests;
 			productName = FastenKalenderTests;
-			productReference = 83BABDC91897AC5C008CDF5B /* FastenKalenderTests.xctest */;
+			productReference = 83BABDC91897AC5C008CDF5B /* KarmelExerzitienTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -923,7 +925,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83BABD9D1897AC5B008CDF5B /* Build configuration list for PBXProject "FastenKalender" */;
+			buildConfigurationList = 83BABD9D1897AC5B008CDF5B /* Build configuration list for PBXProject "KarmelExerzitien" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -936,8 +938,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				83BABDA11897AC5C008CDF5B /* FastenKalender */,
-				83BABDC81897AC5C008CDF5B /* FastenKalenderTests */,
+				83BABDA11897AC5C008CDF5B /* KarmelExerzitien */,
+				83BABDC81897AC5C008CDF5B /* KarmelExerzitienTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1191,7 +1193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83BABDD71897AC5C008CDF5B /* FastenKalenderTests.m in Sources */,
+				83BABDD71897AC5C008CDF5B /* KarmelExerzitienTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1200,7 +1202,7 @@
 /* Begin PBXTargetDependency section */
 		83BABDCF1897AC5C008CDF5B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 83BABDA11897AC5C008CDF5B /* FastenKalender */;
+			target = 83BABDA11897AC5C008CDF5B /* KarmelExerzitien */;
 			targetProxy = 83BABDCE1897AC5C008CDF5B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1309,10 +1311,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FastenKalender/FastenKalender-Prefix.pch";
-				INFOPLIST_FILE = "FastenKalender/FastenKalender-Info.plist";
+				GCC_PREFIX_HEADER = "FastenKalender/KarmelExerzitien-Prefix.pch";
+				INFOPLIST_FILE = "FastenKalender/KarmelExerzitien-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KarmelExerzitien;
 				PROVISIONING_PROFILE = "C69B44F8-6989-4BDC-AF02-BF1A9F12F3F8";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1326,10 +1328,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FastenKalender/FastenKalender-Prefix.pch";
-				INFOPLIST_FILE = "FastenKalender/FastenKalender-Info.plist";
+				GCC_PREFIX_HEADER = "FastenKalender/KarmelExerzitien-Prefix.pch";
+				INFOPLIST_FILE = "FastenKalender/KarmelExerzitien-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KarmelExerzitien;
 				PROVISIONING_PROFILE = "C69B44F8-6989-4BDC-AF02-BF1A9F12F3F8";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1350,8 +1352,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "FastenKalenderTests/FastenKalenderTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "FastenKalenderTests/KarmelExerzitienTests-Info.plist";
+				PRODUCT_NAME = KarmelExerzitienTests;
 				PROVISIONING_PROFILE = "C69B44F8-6989-4BDC-AF02-BF1A9F12F3F8";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -1369,8 +1371,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FastenKalender/FastenKalender-Prefix.pch";
-				INFOPLIST_FILE = "FastenKalenderTests/FastenKalenderTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "FastenKalenderTests/KarmelExerzitienTests-Info.plist";
+				PRODUCT_NAME = KarmelExerzitienTests;
 				PROVISIONING_PROFILE = "C69B44F8-6989-4BDC-AF02-BF1A9F12F3F8";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -1380,7 +1382,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		83BABD9D1897AC5B008CDF5B /* Build configuration list for PBXProject "FastenKalender" */ = {
+		83BABD9D1897AC5B008CDF5B /* Build configuration list for PBXProject "KarmelExerzitien" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83BABDD81897AC5C008CDF5B /* Debug */,
@@ -1389,7 +1391,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83BABDDA1897AC5C008CDF5B /* Build configuration list for PBXNativeTarget "FastenKalender" */ = {
+		83BABDDA1897AC5C008CDF5B /* Build configuration list for PBXNativeTarget "KarmelExerzitien" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83BABDDB1897AC5C008CDF5B /* Debug */,
@@ -1398,7 +1400,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83BABDDD1897AC5C008CDF5B /* Build configuration list for PBXNativeTarget "FastenKalenderTests" */ = {
+		83BABDDD1897AC5C008CDF5B /* Build configuration list for PBXNativeTarget "KarmelExerzitienTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83BABDDE1897AC5C008CDF5B /* Debug */,

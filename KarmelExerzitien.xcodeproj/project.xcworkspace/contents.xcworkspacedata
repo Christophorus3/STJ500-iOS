@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FastenKalender.xcodeproj">
+      location = "self:KarmelExerzitien.xcodeproj">
    </FileRef>
 </Workspace>

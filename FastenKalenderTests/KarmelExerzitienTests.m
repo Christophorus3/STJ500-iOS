@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface FastenKalenderTests : XCTestCase
+@interface KarmelExerzitienTests : XCTestCase
 
 @end
 
-@implementation FastenKalenderTests
+@implementation KarmelExerzitienTests
 
 - (void)setUp
 {
