@@ -19,7 +19,7 @@
 @implementation ESPageViewController
 
 @synthesize days = _days;
-@synthesize currentDay = _currentDay;
+@synthesize currentPage = _currentPage;
 
 - (void)viewDidLoad
 {
@@ -27,13 +27,14 @@
 	// Do any additional setup after loading the view.
 	
 	self.days = [self createDayArray];
-	self.currentDay = self.days.count - 1;
+	self.currentPage = self.days.count;
 	
 	self.dataSource = self;
+	self.delegate = self;
 	
-	[self setViewControllers:@[[self viewControllerForPageNumber:self.currentDay]]
+	[self setViewControllers:@[[self viewControllerForPageNumber:self.currentPage - 1]]
 				   direction:UIPageViewControllerNavigationDirectionForward
-					animated:NO
+					animated:YES
 				  completion:nil];
 	
 	UILocalNotification *notification = [[UILocalNotification alloc] init];
@@ -71,7 +72,6 @@
 	}
 }
 
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -103,7 +103,7 @@
 	
 	ESDay *day2 = [ESDay new];
 	day2.name = @"";
-	day2.headline = @"Weckruf von ... Gott?";
+	day2.headline = @"Weckruf von … Gott?…";
 	day2.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day2.date = startDay;
@@ -124,7 +124,7 @@
 	
 	ESDay *day5 = [ESDay new];
 	day5.name = @"Erster Fastensonntag";
-	day5.headline = @"Mir kann an keinem Ort der Welt etwas fehlen";
+	day5.headline = @"Mir kann an keinem Ort der Welt etwas fehlen!";
 	day5.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day5.date = startDay;
@@ -194,7 +194,7 @@
 	
 	ESDay *day15 = [ESDay new];
 	day15.name = @"Hl. Josef";
-	day15.headline = @"Ich bin getauft";
+	day15.headline = @"Ich bin getauft…";
 	day15.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day15.date = startDay;
@@ -383,49 +383,49 @@
 	
 	ESDay *day42 = [ESDay new];
 	day42.name = @"";
-	day42.headline = @"";
+	day42.headline = @"Leben für die Ewigkeit";
 	day42.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day42.date = startDay;
 	
 	ESDay *day43 = [ESDay new];
 	day43.name = @"";
-	day43.headline = @"";
+	day43.headline = @"Hingabe an den Willen Gottes";
 	day43.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day43.date = startDay;
 	
 	ESDay *day44 = [ESDay new];
 	day44.name = @"Gründonnerstag";
-	day44.headline = @"Im Kreuz ist Heil";
+	day44.headline = @"Kraft der Ölbergstunde";
 	day44.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day44.date = startDay;
 	
 	ESDay *day45 = [ESDay new];
 	day45.name = @"Karfreitag";
-	day45.headline = @"Gedenke, Herr";
+	day45.headline = @"Im Kreuz ist Leben";
 	day45.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day45.date = startDay;
 	
 	ESDay *day46 = [ESDay new];
 	day46.name = @"Karsamstag";
-	day46.headline = @"weil ich mein Leben hingebe";
+	day46.headline = @"Neues Leben nach und nach";
 	day46.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day46.date = startDay;
 	
 	ESDay *day47 = [ESDay new];
 	day47.name = @"Ostersonntag";
-	day47.headline = @"Wie wunderbar ist für mich dieses Wissen";
+	day47.headline = @"Strahlend jubelt die Natur dem Auferstandenen";
 	day47.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day47.date = startDay;
 	
 	ESDay *day48 = [ESDay new];
 	day48.name = @"Ostermontag";
-	day48.headline = @"";
+	day48.headline = @"…und bliebe unser Herz brennend davon!";
 	day48.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day48.date = startDay;

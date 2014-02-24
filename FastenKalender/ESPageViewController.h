@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ESPageViewController : UIPageViewController<UIPageViewControllerDataSource>
+@interface ESPageViewController : UIPageViewController<UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
 @property (nonatomic, strong) NSArray *days;
-@property (nonatomic) int currentDay;
+@property (nonatomic) int currentPage;
+
 
 @end

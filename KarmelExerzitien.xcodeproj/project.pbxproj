@@ -14,7 +14,11 @@
 		8371E40918B78B8A00D5DD4B /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8371E40818B78B8900D5DD4B /* AboutView.xib */; };
 		8371E40C18B78F6E00D5DD4B /* ESAboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8371E40B18B78F6E00D5DD4B /* ESAboutView.m */; };
 		838542D218A27A4B004F9CB7 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838542D118A27A4B004F9CB7 /* iPhone.storyboard */; };
-		8385804C18B7E9B00052EEA6 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8385804B18B7E9B00052EEA6 /* Background.png */; };
+		8385804C18B7E9B00052EEA6 /* Background4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8385804B18B7E9B00052EEA6 /* Background4.png */; };
+		8397C1B418BB682300A45040 /* ESPageContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8397C1B318BB682300A45040 /* ESPageContainerViewController.m */; };
+		8397C1B618BB8D2000A45040 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8397C1B518BB8D2000A45040 /* Background.png */; };
+		8397C1B918BBA5F100A45040 /* Background4S.png in Resources */ = {isa = PBXBuildFile; fileRef = 8397C1B718BBA5F100A45040 /* Background4S.png */; };
+		8397C1BA18BBA5F100A45040 /* BackgroundS.png in Resources */ = {isa = PBXBuildFile; fileRef = 8397C1B818BBA5F100A45040 /* BackgroundS.png */; };
 		83A3BD5918B66BAE00FAE861 /* 1.html in Resources */ = {isa = PBXBuildFile; fileRef = 83A3BCF818B66BAD00FAE861 /* 1.html */; };
 		83A3BD5A18B66BAE00FAE861 /* 1e.html in Resources */ = {isa = PBXBuildFile; fileRef = 83A3BCF918B66BAD00FAE861 /* 1e.html */; };
 		83A3BD5B18B66BAE00FAE861 /* 2.html in Resources */ = {isa = PBXBuildFile; fileRef = 83A3BCFA18B66BAD00FAE861 /* 2.html */; };
@@ -259,7 +263,12 @@
 		8371E40A18B78F6E00D5DD4B /* ESAboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAboutView.h; sourceTree = "<group>"; };
 		8371E40B18B78F6E00D5DD4B /* ESAboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESAboutView.m; sourceTree = "<group>"; };
 		838542D118A27A4B004F9CB7 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
-		8385804B18B7E9B00052EEA6 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		8385804B18B7E9B00052EEA6 /* Background4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background4.png; sourceTree = "<group>"; };
+		8397C1B218BB682300A45040 /* ESPageContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPageContainerViewController.h; sourceTree = "<group>"; };
+		8397C1B318BB682300A45040 /* ESPageContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPageContainerViewController.m; sourceTree = "<group>"; };
+		8397C1B518BB8D2000A45040 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		8397C1B718BBA5F100A45040 /* Background4S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background4S.png; sourceTree = "<group>"; };
+		8397C1B818BBA5F100A45040 /* BackgroundS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundS.png; sourceTree = "<group>"; };
 		83A3BCF818B66BAD00FAE861 /* 1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = 1.html; path = Content/html/1.html; sourceTree = "<group>"; };
 		83A3BCF918B66BAD00FAE861 /* 1e.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = 1e.html; path = Content/html/1e.html; sourceTree = "<group>"; };
 		83A3BCFA18B66BAD00FAE861 /* 2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = 2.html; path = Content/html/2.html; sourceTree = "<group>"; };
@@ -527,7 +536,10 @@
 		8376EFA418A251B400674788 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				8385804B18B7E9B00052EEA6 /* Background.png */,
+				8385804B18B7E9B00052EEA6 /* Background4.png */,
+				8397C1B518BB8D2000A45040 /* Background.png */,
+				8397C1B718BBA5F100A45040 /* Background4S.png */,
+				8397C1B818BBA5F100A45040 /* BackgroundS.png */,
 				83FFC2BE18B6C7F100DD61FE /* edith.jpg */,
 				83BABDE01897B064008CDF5B /* ESGOE_Wien1931_medium.jpg */,
 				83CF6A1718B12C0A00453D5A /* Karmel Logo.png */,
@@ -797,6 +809,8 @@
 				83BABDC31897AC5C008CDF5B /* Images.xcassets */,
 				83BABDAC1897AC5C008CDF5B /* Supporting Files */,
 				8371E40818B78B8900D5DD4B /* AboutView.xib */,
+				8397C1B218BB682300A45040 /* ESPageContainerViewController.h */,
+				8397C1B318BB682300A45040 /* ESPageContainerViewController.m */,
 			);
 			name = KarmelExerzitien;
 			path = FastenKalender;
@@ -1036,10 +1050,12 @@
 				83A3BE7E18B66BE000FAE861 /* 48.jpg in Resources */,
 				83A3BD7C18B66BAE00FAE861 /* 18e.html in Resources */,
 				83A3BD6118B66BAE00FAE861 /* 5.html in Resources */,
+				8397C1B618BB8D2000A45040 /* Background.png in Resources */,
 				83A3BE5618B66BE000FAE861 /* 28.jpg in Resources */,
 				83A3BE6018B66BE000FAE861 /* 33.jpg in Resources */,
 				83A3BE5118B66BE000FAE861 /* 26.jpg in Resources */,
 				83A3BDA118B66BAE00FAE861 /* 37.html in Resources */,
+				8397C1BA18BBA5F100A45040 /* BackgroundS.png in Resources */,
 				83A3BDB718B66BAE00FAE861 /* 48.html in Resources */,
 				83A3BE4318B66BE000FAE861 /* 20-1.jpg in Resources */,
 				83A3BE7018B66BE000FAE861 /* 41.jpg in Resources */,
@@ -1086,6 +1102,7 @@
 				83A3BDB818B66BAE00FAE861 /* 48e.html in Resources */,
 				83A3BE7A18B66BE000FAE861 /* 46.jpg in Resources */,
 				83A3BE7F18B66BE000FAE861 /* evangelium.jpg in Resources */,
+				8397C1B918BBA5F100A45040 /* Background4S.png in Resources */,
 				83A3BD7018B66BAE00FAE861 /* 12e.html in Resources */,
 				83A3BE2218B66BE000FAE861 /* 3.jpg in Resources */,
 				83A3BDAB18B66BAE00FAE861 /* 42.html in Resources */,
@@ -1096,7 +1113,7 @@
 				83A3BE2618B66BE000FAE861 /* 5.jpg in Resources */,
 				83A3BE4718B66BE000FAE861 /* 22-1.jpg in Resources */,
 				83A3BE5418B66BE000FAE861 /* 28-1.jpg in Resources */,
-				8385804C18B7E9B00052EEA6 /* Background.png in Resources */,
+				8385804C18B7E9B00052EEA6 /* Background4.png in Resources */,
 				83A3BE1E18B66BE000FAE861 /* 1.jpg in Resources */,
 				83A3BD6518B66BAE00FAE861 /* 7.html in Resources */,
 				83A3BD8218B66BAE00FAE861 /* 21e.html in Resources */,
@@ -1182,6 +1199,7 @@
 				83E6588F18A62DBC004929F4 /* CustomCellBackground.m in Sources */,
 				83BABDB21897AC5C008CDF5B /* main.m in Sources */,
 				83A3BE8718B66C8700FAE861 /* ESDay.m in Sources */,
+				8397C1B418BB682300A45040 /* ESPageContainerViewController.m in Sources */,
 				8371E40C18B78F6E00D5DD4B /* ESAboutView.m in Sources */,
 				8316641B18A3AB6500E1A84F /* ESDayViewController.m in Sources */,
 				83E6588E18A62DBC004929F4 /* DayCell.m in Sources */,
