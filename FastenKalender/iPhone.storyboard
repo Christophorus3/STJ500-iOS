@@ -18,7 +18,7 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
-                        <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image=" " id="Ztc-fj-ug6">
+                        <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background.png" id="Ztc-fj-ug6">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -121,7 +121,7 @@
                                 </constraints>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XjE-h0-XGc">
-                                <rect key="frame" x="0.0" y="64" width="320" height="319"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -403,7 +403,6 @@
         <image name="Background.png" width="640" height="1136"/>
         <image name="Gospel" width="25" height="25"/>
         <image name="Light_Bulb" width="17" height="27"/>
-        <image name=" " width="320" height="480"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -411,8 +410,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="4Ep-9K-CfA"/>
-        <segue reference="sMq-nl-iwK"/>
+        <segue reference="GwU-eL-pQo"/>
+        <segue reference="vT4-lX-UFV"/>
         <segue reference="dIg-Z5-toE"/>
     </inferredMetricsTieBreakers>
 </document>
