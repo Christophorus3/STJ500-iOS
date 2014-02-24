@@ -27,23 +27,26 @@
 	// Do any additional setup after loading the view.
 	
 	self.days = [self createDayArray];
-	self.currentPage = self.days.count;
+	//self.currentPage = self.days.count;
+	self.currentPage = 0;
 	
 	self.dataSource = self;
 	self.delegate = self;
 	
-	[self setViewControllers:@[[self viewControllerForPageNumber:self.currentPage - 1]]
+	[self setViewControllers:@[[self viewControllerForPageNumber:self.currentPage]]
 				   direction:UIPageViewControllerNavigationDirectionForward
 					animated:YES
 				  completion:nil];
 	
 	UILocalNotification *notification = [[UILocalNotification alloc] init];
 	
-	notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:10];
+	notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:20];
 	notification.alertAction = @"Lesen!";
-	notification.alertBody = @"Zeit abgelaufen!";
+	notification.alertBody = @"Neuer Impuls für den heutigen Tag der KarmelExerzitien!";
 	notification.soundName = UILocalNotificationDefaultSoundName;
 	notification.timeZone = [NSTimeZone localTimeZone];
+	notification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+	
 	
 	[[UIApplication sharedApplication] scheduleLocalNotification:notification];
 	
@@ -61,14 +64,37 @@
 
 - (ESDayViewController *)viewControllerForPageNumber:(int)number
 {
-	if(number < 0 || number == self.days.count) {
+	if(number < 0 || number > self.days.count) {
 		return nil;
-	} else {
-		ESDayViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Day"];
-		[controller setDay:self.days[number]];
+	} else if(number == 0) {
+		ESDayViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Intro"];
 		controller.index = number;
 		
 		return controller;
+		
+	} else {
+		NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+		calendar.timeZone = [NSTimeZone systemTimeZone];
+		
+		//create a reference date:
+		NSDateComponents *comps = [[NSDateComponents alloc] init];
+		comps.timeZone = [NSTimeZone systemTimeZone];
+		comps.day = 21;
+		comps.month = 4;
+		comps.year = 2014;
+		comps.hour = 11;
+		
+		NSDate *now = [calendar dateFromComponents:comps];
+		
+		ESDay *day = self.days[number - 1];
+		
+		if([day.date compare:now] == NSOrderedAscending) {
+			ESDayViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Day"];
+			[controller setDay:self.days[number - 1]];
+			controller.index = number;
+			
+			return controller;
+		} else return nil;
 	}
 }
 
@@ -320,7 +346,7 @@
 	
 	ESDay *day33 = [ESDay new];
 	day33.name = @"Fünfter Fastensonntag";
-	day33.headline = @"";
+	day33.headline = @"Du bist mein starker Gott";
 	day33.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day33.date = startDay;

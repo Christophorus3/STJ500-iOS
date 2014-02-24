@@ -19,6 +19,12 @@
 		[[UITabBar appearance] setBarTintColor:purple];
 	}
 	
+	UILocalNotification *locationNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if (locationNotification) {
+        // Set icon badge number to zero
+        application.applicationIconBadgeNumber = 0;
+    }
+	
     return YES;
 }
 
@@ -26,6 +32,16 @@
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
 	
+	UIApplicationState state = [application applicationState];
+    if (state == UIApplicationStateActive) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Erinnerung"
+                                                        message:notification.alertBody
+                                                       delegate:self cancelButtonTitle:notification.alertAction
+											  otherButtonTitles:nil];
+        [alert show];
+    }
+	
+	application.applicationIconBadgeNumber = 0;
 	
 }
 

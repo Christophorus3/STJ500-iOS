@@ -26,7 +26,7 @@
 	UIView *contentView = [nib objectAtIndex:0];
 	
 	[self.scrollView addSubview:contentView];
-	self.scrollView.contentSize = CGSizeMake(320, 750);
+	self.scrollView.contentSize = CGSizeMake(320, 920);
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,12 +36,19 @@
 	
 }
 
-- (IBAction)webSiteESGOE:(id)sender {
+- (IBAction)webSiteESGOE:(id)sender
+{
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.edith-stein-gesellschaft.at"]];
 }
 
-- (IBAction)websiteKarmel:(id)sender {
+- (IBAction)websiteKarmel:(id)sender
+{
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://wien.karmel.at"]];
+}
+
+- (IBAction)websiteMarienschwestern:(id)sender
+{
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.marienschwestern.at"]];
 }
 
 - (IBAction)facebookKarmel:(id)sender {
