@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ESAboutViewController.h"
 
-@interface ESPageContainerViewController : UIViewController
+@interface ESPageContainerViewController : UIViewController<ESAboutViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UIImageView *backgroundImageView;
+@property (nonatomic, strong) ESAboutViewController *about;
+
+- (void)showAbout:(id)sender;
+- (void)dismissAbout;
 
 @end

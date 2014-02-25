@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "ESDay.h"
+#import "ESAboutViewController.h"
 
-@interface ESDayContentController : UITabBarController
+@interface ESDayContentController : UITabBarController<ESAboutViewDelegate>
 
 @property (nonatomic, strong) ESDay *day;
+@property (nonatomic, weak) ESAboutViewController *about;
+
+- (void)showAbout:(id)sender;
 
 @end

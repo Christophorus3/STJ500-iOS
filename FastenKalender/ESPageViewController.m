@@ -37,7 +37,7 @@
 				   direction:UIPageViewControllerNavigationDirectionForward
 					animated:YES
 				  completion:nil];
-	
+	/*
 	UILocalNotification *notification = [[UILocalNotification alloc] init];
 	
 	notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:20];
@@ -49,7 +49,7 @@
 	
 	
 	[[UIApplication sharedApplication] scheduleLocalNotification:notification];
-	
+	*/
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController

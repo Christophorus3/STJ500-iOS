@@ -13,6 +13,7 @@
 
 @property (nonatomic, weak) ESPageViewController *pageView;
 
+
 @end
 
 @implementation ESPageContainerViewController
@@ -20,6 +21,7 @@
 
 @synthesize backgroundImageView = _backgroundImageView;
 @synthesize pageView = _pageView;
+@synthesize about = _about;
 
 - (void)viewDidLoad
 {
@@ -41,6 +43,25 @@
 		}
 	}
 	
+	UIButton *aboutButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:aboutButton];
+	[aboutButton addTarget:self action:@selector(showAbout:) forControlEvents:UIControlEventTouchUpInside];
+	
+	
+}
+
+- (void)showAbout:(id)sender
+{
+	self.about = [self.storyboard instantiateViewControllerWithIdentifier:@"About"];
+	UINavigationController *navCon = [[UINavigationController alloc] initWithRootViewController:_about];
+	self.about.delegate = self;
+	[self presentViewController:navCon animated:YES completion:nil];
+}
+
+
+- (void)dismissAbout
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

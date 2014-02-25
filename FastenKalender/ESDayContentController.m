@@ -16,11 +16,17 @@
 @implementation ESDayContentController
 
 @synthesize day = _day;
+@synthesize about = _about;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	//Add an About Button to the NavBar
+	UIButton *aboutButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:aboutButton];
+	[aboutButton addTarget:self action:@selector(showAbout:) forControlEvents:UIControlEventTouchUpInside];
+	
+	// Prepare the two content Controllers
 	ESHTMLViewController *impuls = (ESHTMLViewController *)self.viewControllers[0];
 	ESHTMLViewController *evangelium = (ESHTMLViewController *)self.viewControllers[1];
 	
@@ -30,10 +36,23 @@
 	NSURL *contentURL = [[NSBundle mainBundle] URLForResource:[@(self.day.number) stringValue] withExtension:@"html"];
 	NSURL *gospelURL = [[NSBundle mainBundle] URLForResource:[[@(self.day.number) stringValue] stringByAppendingString:@"e"] withExtension:@"html"];
 	
-	
 	impuls.contentURL = contentURL;
 	evangelium.contentURL = gospelURL;
 	
+}
+
+- (void)showAbout:(id)sender
+{
+	self.about = [self.storyboard instantiateViewControllerWithIdentifier:@"About"];
+	UINavigationController *navCon = [[UINavigationController alloc] initWithRootViewController:_about];
+	self.about.delegate = self;
+	[self presentViewController:navCon animated:YES completion:nil];
+	
+}
+
+- (void)dismissAbout
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
