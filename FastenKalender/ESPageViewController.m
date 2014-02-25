@@ -27,7 +27,7 @@
 	// Do any additional setup after loading the view.
 	
 	self.days = [self createDayArray];
-	//self.currentPage = self.days.count;
+	
 	self.currentPage = 0;
 	
 	self.dataSource = self;
