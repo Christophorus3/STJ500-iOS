@@ -7,14 +7,28 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
-@interface ESAboutViewController : UIViewController
+@protocol ESAboutViewDelegate <NSObject>
+
+@required
+- (void)dismissAbout;
+
+@end
+
+
+@interface ESAboutViewController : UIViewController<MFMailComposeViewControllerDelegate>
 
 @property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, strong) MFMailComposeViewController *mailComposer;
+@property (nonatomic, weak) id<ESAboutViewDelegate> delegate;
+@property (nonatomic, weak) UIBarButtonItem *dismissButton;
+
 
 - (IBAction)webSiteESGOE:(id)sender;
 - (IBAction)websiteKarmel:(id)sender;
 - (IBAction)facebookKarmel:(id)sender;
+- (IBAction)sendMail:(id)sender;
 
 
 @end

@@ -16,6 +16,8 @@
 @implementation ESAboutViewController
 
 @synthesize scrollView = _scrollView;
+@synthesize mailComposer = _mailComposer;
+
 
 - (void)viewDidLoad
 {
@@ -27,6 +29,13 @@
 	
 	[self.scrollView addSubview:contentView];
 	self.scrollView.contentSize = CGSizeMake(320, 920);
+	
+	UIBarButtonItem *item = [[UIBarButtonItem alloc] init];
+	item.title = @"Fertig";
+	item.target = self.delegate;
+	item.action = @selector(dismissAbout);
+	
+	self.navigationItem.leftBarButtonItem = item; //[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self.delegate action:@selector(dismissAbout)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,6 +43,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 	
+}
+- (IBAction)websiteEdithVita:(id)sender
+{
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.edith-stein-gesellschaft.at/Edith-Stein-Gesellschaft/Lebensdaten"]];
 }
 
 - (IBAction)webSiteESGOE:(id)sender
@@ -62,4 +75,21 @@
 		[[UIApplication sharedApplication] openURL:fburl];
 	}
 }
+
+- (IBAction)sendMail:(id)sender {
+	self.mailComposer = [[MFMailComposeViewController alloc] init];
+	self.mailComposer.mailComposeDelegate = self;
+	[self.mailComposer setToRecipients:@[@"info@edith-stein-gesellschaft.at"]];
+	[self.mailComposer setSubject:@"Test"];
+	[self.mailComposer setMessageBody:@"Sehr geehrte Damen und Herren!" isHTML:YES];
+	[self presentViewController:self.mailComposer animated:YES completion:nil];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+
 @end
