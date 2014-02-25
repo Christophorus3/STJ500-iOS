@@ -142,7 +142,7 @@ Besuchen Sie auch die Webseiten der Organisatoren: Tippen Sie einfach auf die Lo
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S1t-lC-a2X">
-                    <rect key="frame" x="20" y="838" width="280" height="46"/>
+                    <rect key="frame" x="20" y="870" width="280" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <attributedString key="attributedText">
                         <fragment content="Programmierung: Christoph Ernst Wottawa">
@@ -176,6 +176,17 @@ Besuchen Sie auch die Webseiten der Organisatoren: Tippen Sie einfach auf die Lo
                     </state>
                     <connections>
                         <action selector="websiteEdithVita:" destination="-1" eventType="touchUpInside" id="gbi-qL-Rq2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="83H-Y1-oTM">
+                    <rect key="frame" x="20" y="850" width="49" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Pixelio">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="websitePixelio:" destination="-1" eventType="touchUpInside" id="SPh-b8-UpJ"/>
                     </connections>
                 </button>
             </subviews>

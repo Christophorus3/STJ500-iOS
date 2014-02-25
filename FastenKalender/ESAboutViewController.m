@@ -44,6 +44,13 @@
     // Dispose of any resources that can be recreated.
 	
 }
+
+- (IBAction)websitePixelio:(id)sender
+{
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.pixelio.de"]];
+}
+
+
 - (IBAction)websiteEdithVita:(id)sender
 {
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.edith-stein-gesellschaft.at/Edith-Stein-Gesellschaft/Lebensdaten"]];
