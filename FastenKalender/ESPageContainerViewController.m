@@ -35,12 +35,8 @@
 		self.backgroundImageView.image = [UIImage imageNamed:@"Background"];
 	}
 	
-	if(floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
-		if([[UIScreen mainScreen]bounds].size.height == 568) {
-			self.backgroundImageView.image = [UIImage imageNamed:@"Background4S"];
-		} else {
-			self.backgroundImageView.image = [UIImage imageNamed:@"BackgroundS"];
-		}
+	if([[UIScreen mainScreen]scale] == 1) {
+		self.backgroundImageView.image = [UIImage imageNamed:@"BackgroundS"];
 	}
 	
 	UIButton *aboutButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
