@@ -774,7 +774,7 @@
 				83A3BE8418B66C6000FAE861 /* Model */,
 				8376EFA318A251A400674788 /* Content */,
 				83E6589018A62DC9004929F4 /* Kalender */,
-				83E6589118A62DEA004929F4 /* Tagesübersicht */,
+				83E6589118A62DEA004929F4 /* Tagesübersicht */,
 				83E6589218A62E2A004929F4 /* Tagesinhalt */,
 				83BABDB41897AC5C008CDF5B /* ESAppDelegate.h */,
 				83BABDB51897AC5C008CDF5B /* ESAppDelegate.m */,
@@ -789,8 +789,7 @@
 				8397C1B218BB682300A45040 /* ESPageContainerViewController.h */,
 				8397C1B318BB682300A45040 /* ESPageContainerViewController.m */,
 			);
-			name = KarmelExerzitien;
-			path = FastenKalender;
+			path = KarmelExerzitien;
 			sourceTree = "<group>";
 		};
 		83BABDAC1897AC5C008CDF5B /* Supporting Files */ = {
@@ -810,8 +809,7 @@
 				83BABDD61897AC5C008CDF5B /* KarmelExerzitienTests.m */,
 				83BABDD11897AC5C008CDF5B /* Supporting Files */,
 			);
-			name = KarmelExerzitienTests;
-			path = FastenKalenderTests;
+			path = KarmelExerzitienTests;
 			sourceTree = "<group>";
 		};
 		83BABDD11897AC5C008CDF5B /* Supporting Files */ = {
@@ -853,7 +851,7 @@
 			name = Kalender;
 			sourceTree = "<group>";
 		};
-		83E6589118A62DEA004929F4 /* Tagesübersicht */ = {
+		83E6589118A62DEA004929F4 /* Tagesübersicht */ = {
 			isa = PBXGroup;
 			children = (
 				8316642918A56A7400E1A84F /* ESPageViewController.h */,
@@ -1321,8 +1319,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FastenKalender/KarmelExerzitien-Prefix.pch";
-				INFOPLIST_FILE = "FastenKalender/KarmelExerzitien-Info.plist";
+				GCC_PREFIX_HEADER = "KarmelExerzitien/KarmelExerzitien-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/KarmelExerzitien/KarmelExerzitien-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = KarmelExerzitien;
 				PROVISIONING_PROFILE = "";
@@ -1338,8 +1336,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FastenKalender/KarmelExerzitien-Prefix.pch";
-				INFOPLIST_FILE = "FastenKalender/KarmelExerzitien-Info.plist";
+				GCC_PREFIX_HEADER = "KarmelExerzitien/KarmelExerzitien-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/KarmelExerzitien/KarmelExerzitien-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = KarmelExerzitien;
 				PROVISIONING_PROFILE = "";
