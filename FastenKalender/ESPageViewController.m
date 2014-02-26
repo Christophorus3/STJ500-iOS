@@ -360,7 +360,7 @@
 	
 	ESDay *day35 = [ESDay new];
 	day35.name = @"";
-	day35.headline = @"Bei Gott ist nichts unmöglich";
+	day35.headline = @"";
 	day35.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day35.date = startDay;
@@ -402,7 +402,7 @@
 	
 	ESDay *day41 = [ESDay new];
 	day41.name = @"";
-	day41.headline = @"Leben für die Ewigkeit";
+	day41.headline = @"";
 	day41.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day41.date = startDay;
