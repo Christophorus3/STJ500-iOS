@@ -62,18 +62,7 @@
 		return controller;
 		
 	} else {
-		NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-		calendar.timeZone = [NSTimeZone systemTimeZone];
-		
-		//create a reference date:
-		NSDateComponents *comps = [[NSDateComponents alloc] init];
-		comps.timeZone = [NSTimeZone systemTimeZone];
-		comps.day = 26;
-		comps.month = 2;
-		comps.year = 2014;
-		comps.hour = 11;
-		
-		NSDate *now = [calendar dateFromComponents:comps];
+		NSDate *now = [NSDate date];
 		
 		ESDay *day = self.days[number - 1];
 		
@@ -89,18 +78,7 @@
 
 - (int)currentDayPageNumber
 {
-	NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-	calendar.timeZone = [NSTimeZone systemTimeZone];
-	
-	//create a reference date:
-	NSDateComponents *comps = [[NSDateComponents alloc] init];
-	comps.timeZone = [NSTimeZone systemTimeZone];
-	comps.day = 26;
-	comps.month = 2;
-	comps.year = 2014;
-	comps.hour = 12;
-	
-	NSDate *now = [calendar dateFromComponents:comps];
+	NSDate *now = [NSDate date];
 	
 	int i = 0;
 	
@@ -116,17 +94,18 @@
 - (void)setLocalNotifications
 {
 	for (ESDay *day in self.days) {
-		
-		UILocalNotification *notification = [[UILocalNotification alloc] init];
-		
-		notification.fireDate = [day.date dateByAddingTimeInterval:60*60*10];
-		notification.alertAction = @"Lesen";
-		notification.alertBody = [@"KarmelExerzitien-Impuls für Heute: " stringByAppendingString:day.headline];
-		notification.soundName = UILocalNotificationDefaultSoundName;
-		notification.timeZone = [NSTimeZone localTimeZone];
-		notification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
-				
-		[[UIApplication sharedApplication] scheduleLocalNotification:notification];
+		if([day.date compare:[NSDate date]] == NSOrderedDescending) {
+			UILocalNotification *notification = [[UILocalNotification alloc] init];
+			
+			notification.fireDate = [day.date dateByAddingTimeInterval:60*60*10];
+			notification.alertAction = @"Lesen";
+			notification.alertBody = [@"KarmelExerzitien-Impuls für Heute: " stringByAppendingString:day.headline];
+			notification.soundName = UILocalNotificationDefaultSoundName;
+			notification.timeZone = [NSTimeZone localTimeZone];
+			notification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+			
+			[[UIApplication sharedApplication] scheduleLocalNotification:notification];
+		}
 	}
 }
 
