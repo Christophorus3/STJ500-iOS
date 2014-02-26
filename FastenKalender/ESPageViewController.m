@@ -28,7 +28,7 @@
 	
 	self.days = [self createDayArray];
 	
-	self.currentPage = 0;
+	self.currentPage = [self currentDayPageNumber];
 	
 	self.dataSource = self;
 	self.delegate = self;
@@ -37,19 +37,8 @@
 				   direction:UIPageViewControllerNavigationDirectionForward
 					animated:YES
 				  completion:nil];
-	/*
-	UILocalNotification *notification = [[UILocalNotification alloc] init];
 	
-	notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:20];
-	notification.alertAction = @"Lesen!";
-	notification.alertBody = @"Neuer Impuls für den heutigen Tag der KarmelExerzitien!";
-	notification.soundName = UILocalNotificationDefaultSoundName;
-	notification.timeZone = [NSTimeZone localTimeZone];
-	notification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
-	
-	
-	[[UIApplication sharedApplication] scheduleLocalNotification:notification];
-	*/
+	[self setLocalNotifications];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
@@ -79,8 +68,8 @@
 		//create a reference date:
 		NSDateComponents *comps = [[NSDateComponents alloc] init];
 		comps.timeZone = [NSTimeZone systemTimeZone];
-		comps.day = 21;
-		comps.month = 4;
+		comps.day = 26;
+		comps.month = 2;
 		comps.year = 2014;
 		comps.hour = 11;
 		
@@ -98,6 +87,49 @@
 	}
 }
 
+- (int)currentDayPageNumber
+{
+	NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	calendar.timeZone = [NSTimeZone systemTimeZone];
+	
+	//create a reference date:
+	NSDateComponents *comps = [[NSDateComponents alloc] init];
+	comps.timeZone = [NSTimeZone systemTimeZone];
+	comps.day = 26;
+	comps.month = 2;
+	comps.year = 2014;
+	comps.hour = 12;
+	
+	NSDate *now = [calendar dateFromComponents:comps];
+	
+	int i = 0;
+	
+	for (ESDay *day in self.days) {
+		if([day.date compare:now] == NSOrderedAscending) {
+			i = MAX(i, day.number);
+		}
+	}
+	
+	return i;
+}
+
+- (void)setLocalNotifications
+{
+	for (ESDay *day in self.days) {
+		
+		UILocalNotification *notification = [[UILocalNotification alloc] init];
+		
+		notification.fireDate = [day.date dateByAddingTimeInterval:60*60*10];
+		notification.alertAction = @"Lesen";
+		notification.alertBody = [@"KarmelExerzitien-Impuls für Heute: " stringByAppendingString:day.headline];
+		notification.soundName = UILocalNotificationDefaultSoundName;
+		notification.timeZone = [NSTimeZone localTimeZone];
+		notification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+				
+		[[UIApplication sharedApplication] scheduleLocalNotification:notification];
+	}
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -109,12 +141,14 @@
 	calendar.timeZone = [NSTimeZone systemTimeZone];
 	
 	//create StartDate:
+	//Wann beginnt die Fastenzeit?
 	NSDateComponents *comps = [[NSDateComponents alloc] init];
 	comps.timeZone = [NSTimeZone systemTimeZone];
-	comps.day = 5;
-	comps.month = 3;
+	comps.day = 25;
+	comps.month = 2;
 	comps.year = 2014;
-	comps.hour = 10;
+	comps.hour = 0;
+	comps.minute = 1;
 	
 	NSDate *startDay = [calendar dateFromComponents:comps];
 	int startNumber = 1;
@@ -395,7 +429,7 @@
 	
 	ESDay *day40 = [ESDay new];
 	day40.name = @"Palmsonntag";
-	day40.headline = @"Glauben und Lieben";
+	day40.headline = @"Hosanna!";
 	day40.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day40.date = startDay;
@@ -423,7 +457,7 @@
 	
 	ESDay *day44 = [ESDay new];
 	day44.name = @"Gründonnerstag";
-	day44.headline = @"Kraft der Ölbergstunde";
+	day44.headline = @"Im Kreuz ist Heil";
 	day44.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day44.date = startDay;
