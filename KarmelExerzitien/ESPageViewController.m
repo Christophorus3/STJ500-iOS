@@ -53,6 +53,32 @@
 
 - (ESDayViewController *)viewControllerForPageNumber:(int)number
 {
+	if(number == self.days.count + 1) {
+		NSDate *now = [NSDate date];
+		
+		NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+		calendar.timeZone = [NSTimeZone systemTimeZone];
+		
+		//create StartDate:
+		//Wann ist Osterdienstag?
+		NSDateComponents *comps = [[NSDateComponents alloc] init];
+		comps.timeZone = [NSTimeZone systemTimeZone];
+		comps.day = 22;
+		comps.month = 4;
+		comps.year = 2014;
+		comps.hour = 0;
+		comps.minute = 0;
+		
+		NSDate *endDay = [calendar dateFromComponents:comps];
+		
+		if([endDay compare:now] == NSOrderedAscending) {
+			ESDayViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Outro"];
+			controller.index = number;
+			return controller;
+			
+		} else return nil;
+	}
+	
 	if(number < 0 || number > self.days.count) {
 		return nil;
 	} else if(number == 0) {
@@ -87,6 +113,10 @@
 			i = MAX(i, day.number);
 		}
 	}
+	ESDay *last = self.days.lastObject;
+	if([last.date compare:now] == NSOrderedAscending) {
+		return self.days.count + 1;
+	}
 	
 	return i;
 }
@@ -107,6 +137,32 @@
 			[[UIApplication sharedApplication] scheduleLocalNotification:notification];
 		}
 	}
+	NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	calendar.timeZone = [NSTimeZone systemTimeZone];
+	
+	//create StartDate:
+	//Wann ist Osterdienstag?
+	NSDateComponents *comps = [[NSDateComponents alloc] init];
+	comps.timeZone = [NSTimeZone systemTimeZone];
+	comps.day = 22;
+	comps.month = 4;
+	comps.year = 2014;
+	comps.hour = 10;
+	comps.minute = 0;
+	
+	NSDate *endDay = [calendar dateFromComponents:comps];
+	
+	UILocalNotification *notification = [[UILocalNotification alloc] init];
+	
+	notification.fireDate = endDay;
+	notification.alertAction = @"Lesen";
+	notification.alertBody = @"KarmelExerzitien Update für die Adventzeit";
+	notification.soundName = UILocalNotificationDefaultSoundName;
+	notification.timeZone = [NSTimeZone localTimeZone];
+	notification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+	
+	[[UIApplication sharedApplication] scheduleLocalNotification:notification];
+	
 }
 
 - (void)didReceiveMemoryWarning
@@ -127,7 +183,7 @@
 	comps.month = 3;
 	comps.year = 2014;
 	comps.hour = 0;
-	comps.minute = 1;
+	comps.minute = 0;
 	
 	NSDate *startDay = [calendar dateFromComponents:comps];
 	int startNumber = 1;
