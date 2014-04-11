@@ -11,6 +11,7 @@
 		8316642818A5641A00E1A84F /* ESHTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8316642718A5641A00E1A84F /* ESHTMLViewController.m */; };
 		8316642B18A56A7400E1A84F /* ESPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8316642A18A56A7400E1A84F /* ESPageViewController.m */; };
 		8316642E18A56D4000E1A84F /* ESDayContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8316642D18A56D4000E1A84F /* ESDayContentController.m */; };
+		8349498318F88E4D000A5924 /* Auferstehung_Christi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8349498218F88E4D000A5924 /* Auferstehung_Christi.jpg */; };
 		8371E40918B78B8A00D5DD4B /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8371E40818B78B8900D5DD4B /* AboutView.xib */; };
 		8371E40C18B78F6E00D5DD4B /* ESAboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8371E40B18B78F6E00D5DD4B /* ESAboutView.m */; };
 		838542D218A27A4B004F9CB7 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838542D118A27A4B004F9CB7 /* iPhone.storyboard */; };
@@ -259,10 +260,13 @@
 		8316642A18A56A7400E1A84F /* ESPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPageViewController.m; sourceTree = "<group>"; };
 		8316642C18A56D4000E1A84F /* ESDayContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDayContentController.h; sourceTree = "<group>"; };
 		8316642D18A56D4000E1A84F /* ESDayContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDayContentController.m; sourceTree = "<group>"; };
+		8349498218F88E4D000A5924 /* Auferstehung_Christi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Auferstehung_Christi.jpg; sourceTree = "<group>"; };
 		8371E40818B78B8900D5DD4B /* AboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutView.xib; sourceTree = "<group>"; };
 		8371E40A18B78F6E00D5DD4B /* ESAboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAboutView.h; sourceTree = "<group>"; };
 		8371E40B18B78F6E00D5DD4B /* ESAboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESAboutView.m; sourceTree = "<group>"; };
 		838542D118A27A4B004F9CB7 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		8385B4EB18BE3D030016FCA8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8385B4EC18BE3D030016FCA8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8397C1B218BB682300A45040 /* ESPageContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPageContainerViewController.h; sourceTree = "<group>"; };
 		8397C1B318BB682300A45040 /* ESPageContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPageContainerViewController.m; sourceTree = "<group>"; };
 		83A3BE8518B66C8700FAE861 /* ESDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDay.h; sourceTree = "<group>"; };
@@ -272,7 +276,6 @@
 		83BABDA71897AC5C008CDF5B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		83BABDA91897AC5C008CDF5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		83BABDAD1897AC5C008CDF5B /* KarmelExerzitien-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KarmelExerzitien-Info.plist"; sourceTree = "<group>"; };
-		83BABDAF1897AC5C008CDF5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83BABDB11897AC5C008CDF5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83BABDB31897AC5C008CDF5B /* KarmelExerzitien-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KarmelExerzitien-Prefix.pch"; sourceTree = "<group>"; };
 		83BABDB41897AC5C008CDF5B /* ESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESAppDelegate.h; sourceTree = "<group>"; };
@@ -281,7 +284,6 @@
 		83BABDC91897AC5C008CDF5B /* KarmelExerzitienTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarmelExerzitienTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BABDCA1897AC5C008CDF5B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		83BABDD21897AC5C008CDF5B /* KarmelExerzitienTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KarmelExerzitienTests-Info.plist"; sourceTree = "<group>"; };
-		83BABDD41897AC5C008CDF5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83BABDD61897AC5C008CDF5B /* KarmelExerzitienTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KarmelExerzitienTests.m; sourceTree = "<group>"; };
 		83C0F63B18BD71290004C675 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = Images/Background.png; sourceTree = "<group>"; };
 		83C0F63C18BD71290004C675 /* Background4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background4.png; path = Images/Background4.png; sourceTree = "<group>"; };
@@ -774,7 +776,7 @@
 				83A3BE8418B66C6000FAE861 /* Model */,
 				8376EFA318A251A400674788 /* Content */,
 				83E6589018A62DC9004929F4 /* Kalender */,
-				83E6589118A62DEA004929F4 /* Tagesübersicht */,
+				83E6589118A62DEA004929F4 /* Tagesübersicht */,
 				83E6589218A62E2A004929F4 /* Tagesinhalt */,
 				83BABDB41897AC5C008CDF5B /* ESAppDelegate.h */,
 				83BABDB51897AC5C008CDF5B /* ESAppDelegate.m */,
@@ -824,6 +826,7 @@
 		83C0F63A18BD711D0004C675 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8349498218F88E4D000A5924 /* Auferstehung_Christi.jpg */,
 				83C0F63B18BD71290004C675 /* Background.png */,
 				83C0F63C18BD71290004C675 /* Background4.png */,
 				83C0F63D18BD71290004C675 /* BackgroundS.png */,
@@ -851,7 +854,7 @@
 			name = Kalender;
 			sourceTree = "<group>";
 		};
-		83E6589118A62DEA004929F4 /* Tagesübersicht */ = {
+		83E6589118A62DEA004929F4 /* Tagesübersicht */ = {
 			isa = PBXGroup;
 			children = (
 				8316642918A56A7400E1A84F /* ESPageViewController.h */,
@@ -922,7 +925,7 @@
 				ORGANIZATIONNAME = "Christoph Wottawa";
 				TargetAttributes = {
 					83BABDA11897AC5C008CDF5B = {
-						DevelopmentTeam = K6YDQ7N662;
+						DevelopmentTeam = 273HCU2MFM;
 					};
 					83BABDC81897AC5C008CDF5B = {
 						TestTargetID = 83BABDA11897AC5C008CDF5B;
@@ -936,6 +939,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 83BABD991897AC5B008CDF5B;
 			productRefGroup = 83BABDA31897AC5C008CDF5B /* Products */;
@@ -1010,6 +1014,7 @@
 				83C0F72518BD719A0004C675 /* 6.html in Resources */,
 				83C0F76118BD719A0004C675 /* 21.html in Resources */,
 				83C0F7AB18BD719B0004C675 /* 39-1.jpg in Resources */,
+				8349498318F88E4D000A5924 /* Auferstehung_Christi.jpg in Resources */,
 				83C0F73118BD719A0004C675 /* 9.html in Resources */,
 				83C0F7B718BD719B0004C675 /* 42-1.jpg in Resources */,
 				83C0F7BD18BD719B0004C675 /* 43.jpg in Resources */,
@@ -1219,7 +1224,7 @@
 		83BABDAE1897AC5C008CDF5B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				83BABDAF1897AC5C008CDF5B /* en */,
+				8385B4EB18BE3D030016FCA8 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1227,7 +1232,7 @@
 		83BABDD31897AC5C008CDF5B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				83BABDD41897AC5C008CDF5B /* en */,
+				8385B4EC18BE3D030016FCA8 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1251,8 +1256,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Christoph Wottawa (ND84KCA5M3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christoph Wottawa (ND84KCA5M3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1270,7 +1275,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "C69B44F8-6989-4BDC-AF02-BF1A9F12F3F8";
+				PROVISIONING_PROFILE = "CC17F1B5-7214-42DD-897E-4B09DEE75CA7";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1292,8 +1297,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Christoph Wottawa (ND84KCA5M3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christoph Wottawa (ND84KCA5M3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1304,7 +1309,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PROVISIONING_PROFILE = "C69B44F8-6989-4BDC-AF02-BF1A9F12F3F8";
+				PROVISIONING_PROFILE = "CC17F1B5-7214-42DD-897E-4B09DEE75CA7";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
@@ -1317,13 +1322,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KarmelExerzitien/KarmelExerzitien-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/KarmelExerzitien/KarmelExerzitien-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = KarmelExerzitien;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "CC17F1B5-7214-42DD-897E-4B09DEE75CA7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1334,13 +1339,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KarmelExerzitien/KarmelExerzitien-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/KarmelExerzitien/KarmelExerzitien-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = KarmelExerzitien;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "CC17F1B5-7214-42DD-897E-4B09DEE75CA7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

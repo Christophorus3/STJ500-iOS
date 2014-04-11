@@ -91,6 +91,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "KarmelExerzitien"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

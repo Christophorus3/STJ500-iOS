@@ -86,9 +86,9 @@
 - (IBAction)sendMail:(id)sender {
 	self.mailComposer = [[MFMailComposeViewController alloc] init];
 	self.mailComposer.mailComposeDelegate = self;
-	[self.mailComposer setToRecipients:@[@"info@edith-stein-gesellschaft.at"]];
-	[self.mailComposer setSubject:@"Test"];
-	[self.mailComposer setMessageBody:@"Sehr geehrte Damen und Herren!" isHTML:YES];
+	[self.mailComposer setToRecipients:@[@"online-exerzitien@karmel.at"]];
+	[self.mailComposer setSubject:@"KarmelExerzitien App"];
+	[self.mailComposer setMessageBody:@"" isHTML:YES];
 	[self presentViewController:self.mailComposer animated:YES completion:nil];
 }
 

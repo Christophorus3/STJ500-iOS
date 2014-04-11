@@ -13,6 +13,7 @@
 @synthesize name = _name;
 @synthesize date = _date;
 @synthesize number = _number;
+@synthesize headline = _headline;
 
 - (NSString *)dateDescription {
 	
