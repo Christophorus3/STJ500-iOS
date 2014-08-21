@@ -13,11 +13,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-	if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
-		UIColor *purple = [UIColor colorWithRed:200/255.0f green:202/255.0f blue:235/255.0f alpha:1.0f];
-		[[UINavigationBar appearance] setBarTintColor:purple];
-		[[UITabBar appearance] setBarTintColor:purple];
-	}
+	//if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
+		//UIColor *purple = [UIColor colorWithRed:200/255.0f green:202/255.0f blue:235/255.0f alpha:1.0f];
+		//[[UINavigationBar appearance] setBarTintColor:purple];
+		//[[UITabBar appearance] setBarTintColor:purple];
+	//}
 	
 	UILocalNotification *locationNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
     if (locationNotification) {

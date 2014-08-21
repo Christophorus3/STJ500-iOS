@@ -8,7 +8,7 @@
 
 #import "ESPageViewController.h"
 #import "ESDayViewController.h"
-#import "ESDay.h"
+#import "Day.h"
 
 @interface ESPageViewController ()
 
@@ -28,7 +28,7 @@
 	
 	self.days = [self createDayArray];
 	
-	self.currentPage = [self currentDayPageNumber];
+	self.currentPage =  1; //[self currentDayPageNumber];
 	
 	self.dataSource = self;
 	self.delegate = self;
@@ -38,7 +38,7 @@
 					animated:YES
 				  completion:nil];
 	
-	[self setLocalNotifications];
+	//[self setLocalNotifications];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
@@ -90,7 +90,7 @@
 	} else {
 		NSDate *now = [NSDate date];
 		
-		ESDay *day = self.days[number - 1];
+		Day *day = self.days[number - 1];
 		
 		if([day.date compare:now] == NSOrderedAscending) {
 			ESDayViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Day"];
@@ -108,12 +108,12 @@
 	
 	int i = 0;
 	
-	for (ESDay *day in self.days) {
+	for (Day *day in self.days) {
 		if([day.date compare:now] == NSOrderedAscending) {
 			i = MAX(i, day.number);
 		}
 	}
-	ESDay *last = self.days.lastObject;
+	Day *last = self.days.lastObject;
 	if([last.date compare:now] == NSOrderedAscending) {
 		return self.days.count + 1;
 	}
@@ -123,7 +123,7 @@
 
 - (void)setLocalNotifications
 {
-	for (ESDay *day in self.days) {
+	for (Day *day in self.days) {
 		if([day.date compare:[NSDate date]] == NSOrderedDescending) {
 			UILocalNotification *notification = [[UILocalNotification alloc] init];
 			
@@ -190,335 +190,335 @@
 	
 	//start building all the days: :-D
 	
-	ESDay *day1 = [ESDay new];
+	Day *day1 = [Day new];
 	day1.name = @"Aschermittwoch";
 	day1.headline = @"Innere Umkehrbewegung";
 	day1.number = startNumber++;
 	day1.date = startDay;
 	
-	ESDay *day2 = [ESDay new];
+	Day *day2 = [Day new];
 	day2.name = @"";
 	day2.headline = @"Weckruf von … Gott?…";
 	day2.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day2.date = startDay;
 	
-	ESDay *day3 = [ESDay new];
+	Day *day3 = [Day new];
 	day3.name = @"";
 	day3.headline = @"Höre mich und hilf mir!";
 	day3.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day3.date = startDay;
 	
-	ESDay *day4 = [ESDay new];
+	Day *day4 = [Day new];
 	day4.name = @"";
 	day4.headline = @"In Gottes Herzen";
 	day4.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day4.date = startDay;
 	
-	ESDay *day5 = [ESDay new];
+	Day *day5 = [Day new];
 	day5.name = @"Erster Fastensonntag";
 	day5.headline = @"Mir kann an keinem Ort der Welt etwas fehlen!";
 	day5.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day5.date = startDay;
 	
-	ESDay *day6 = [ESDay new];
+	Day *day6 = [Day new];
 	day6.name = @"";
 	day6.headline = @"Heilsame Sachlichkeit";
 	day6.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day6.date = startDay;
 	
-	ESDay *day7 = [ESDay new];
+	Day *day7 = [Day new];
 	day7.name = @"";
 	day7.headline = @"Jeder soll darauf achten, wie er weiterbaut.";
 	day7.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day7.date = startDay;
 	
-	ESDay *day8 = [ESDay new];
+	Day *day8 = [Day new];
 	day8.name = @"";
 	day8.headline = @"Das Bild des Herrn";
 	day8.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day8.date = startDay;
 	
-	ESDay *day9 = [ESDay new];
+	Day *day9 = [Day new];
 	day9.name = @"";
 	day9.headline = @"Eucharistie im Alltag";
 	day9.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day9.date = startDay;
 	
-	ESDay *day10 = [ESDay new];
+	Day *day10 = [Day new];
 	day10.name = @"";
 	day10.headline = @"Göttliche Barmherzigkeit";
 	day10.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day10.date = startDay;
 	
-	ESDay *day11 = [ESDay new];
+	Day *day11 = [Day new];
 	day11.name = @"";
 	day11.headline = @"Gottesbeziehung";
 	day11.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day11.date = startDay;
 	
-	ESDay *day12 = [ESDay new];
+	Day *day12 = [Day new];
 	day12.name = @"Zweiter Fastensonntag";
 	day12.headline = @"Sehnen und Suchen";
 	day12.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day12.date = startDay;
 	
-	ESDay *day13 = [ESDay new];
+	Day *day13 = [Day new];
 	day13.name = @"";
 	day13.headline = @"Ewigkeit und Zeit";
 	day13.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day13.date = startDay;
 	
-	ESDay *day14 = [ESDay new];
+	Day *day14 = [Day new];
 	day14.name = @"";
 	day14.headline = @"Meine Lebensregel?";
 	day14.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day14.date = startDay;
 	
-	ESDay *day15 = [ESDay new];
+	Day *day15 = [Day new];
 	day15.name = @"Hl. Josef";
 	day15.headline = @"Ich bin getauft…";
 	day15.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day15.date = startDay;
 	
-	ESDay *day16 = [ESDay new];
+	Day *day16 = [Day new];
 	day16.name = @"";
 	day16.headline = @"Sei besiegelt durch den Hl. Geist";
 	day16.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day16.date = startDay;
 	
-	ESDay *day17 = [ESDay new];
+	Day *day17 = [Day new];
 	day17.name = @"";
 	day17.headline = @"Zwischen Tiefe und Oberfläche";
 	day17.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day17.date = startDay;
 	
-	ESDay *day18 = [ESDay new];
+	Day *day18 = [Day new];
 	day18.name = @"";
 	day18.headline = @"Christsein im Alltag";
 	day18.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day18.date = startDay;
 	
-	ESDay *day19 = [ESDay new];
+	Day *day19 = [Day new];
 	day19.name = @"Dritter Fastensonntag";
 	day19.headline = @"Ausstrahlung";
 	day19.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day19.date = startDay;
 	
-	ESDay *day20 = [ESDay new];
+	Day *day20 = [Day new];
 	day20.name = @"";
 	day20.headline = @"Vorhöfe und Grenzen";
 	day20.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day20.date = startDay;
 	
-	ESDay *day21 = [ESDay new];
+	Day *day21 = [Day new];
 	day21.name = @"Verkündigung des Herrn";
 	day21.headline = @"Wenn Ihr fastet";
 	day21.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day21.date = startDay;
 	
-	ESDay *day22 = [ESDay new];
+	Day *day22 = [Day new];
 	day22.name = @"";
 	day22.headline = @"Im bergenden Arm";
 	day22.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day22.date = startDay;
 	
-	ESDay *day23 = [ESDay new];
+	Day *day23 = [Day new];
 	day23.name = @"";
 	day23.headline = @"Lebensquell";
 	day23.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day23.date = startDay;
 	
-	ESDay *day24 = [ESDay new];
+	Day *day24 = [Day new];
 	day24.name = @"";
 	day24.headline = @"Gott, Du allein";
 	day24.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day24.date = startDay;
 	
-	ESDay *day25 = [ESDay new];
+	Day *day25 = [Day new];
 	day25.name = @"";
 	day25.headline = @"Zeit – Krankheit";
 	day25.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day25.date = startDay;
 	
-	ESDay *day26 = [ESDay new];
+	Day *day26 = [Day new];
 	day26.name = @"Vierter Fastensonntag";
 	day26.headline = @"Auf dem Weg zur Quelle";
 	day26.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day26.date = startDay;
 	
-	ESDay *day27 = [ESDay new];
+	Day *day27 = [Day new];
 	day27.name = @"";
 	day27.headline = @"Ich bin durchaus keine Heilige...";
 	day27.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day27.date = startDay;
 	
-	ESDay *day28 = [ESDay new];
+	Day *day28 = [Day new];
 	day28.name = @"";
 	day28.headline = @"Die Gesegnete vom Kreuz";
 	day28.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day28.date = startDay;
 	
-	ESDay *day29 = [ESDay new];
+	Day *day29 = [Day new];
 	day29.name = @"";
 	day29.headline = @"Nahrung für die Seele";
 	day29.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day29.date = startDay;
 	
-	ESDay *day30 = [ESDay new];
+	Day *day30 = [Day new];
 	day30.name = @"";
 	day30.headline = @"Aug' in Aug' mit Gott";
 	day30.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day30.date = startDay;
 	
-	ESDay *day31 = [ESDay new];
+	Day *day31 = [Day new];
 	day31.name = @"";
 	day31.headline = @"zufrieden mit dem Balken im Auge?";
 	day31.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day31.date = startDay;
 	
-	ESDay *day32 = [ESDay new];
+	Day *day32 = [Day new];
 	day32.name = @"";
 	day32.headline = @"Boden unter den Füßen";
 	day32.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day32.date = startDay;
 	
-	ESDay *day33 = [ESDay new];
+	Day *day33 = [Day new];
 	day33.name = @"Fünfter Fastensonntag";
 	day33.headline = @"Du bist mein starker Gott";
 	day33.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day33.date = startDay;
 	
-	ESDay *day34 = [ESDay new];
+	Day *day34 = [Day new];
 	day34.name = @"";
 	day34.headline = @"Wege zur inneren Stille";
 	day34.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day34.date = startDay;
 	
-	ESDay *day35 = [ESDay new];
+	Day *day35 = [Day new];
 	day35.name = @"";
 	day35.headline = @"";
 	day35.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day35.date = startDay;
 	
-	ESDay *day36 = [ESDay new];
+	Day *day36 = [Day new];
 	day36.name = @"";
 	day36.headline = @"Bei Gott ist nichts unmöglich";
 	day36.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day36.date = startDay;
 	
-	ESDay *day37 = [ESDay new];
+	Day *day37 = [Day new];
 	day37.name = @"";
 	day37.headline = @"Ewige Liebe";
 	day37.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day37.date = startDay;
 	
-	ESDay *day38 = [ESDay new];
+	Day *day38 = [Day new];
 	day38.name = @"";
 	day38.headline = @"Ich muss immer wieder an die Königin Esther denken";
 	day38.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day38.date = startDay;
 	
-	ESDay *day39 = [ESDay new];
+	Day *day39 = [Day new];
 	day39.name = @"";
 	day39.headline = @"Wir lieben Gott und die Menschen mit ein und demselben Herzen";
 	day39.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day39.date = startDay;
 	
-	ESDay *day40 = [ESDay new];
+	Day *day40 = [Day new];
 	day40.name = @"Palmsonntag";
 	day40.headline = @"Hosanna!";
 	day40.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day40.date = startDay;
 	
-	ESDay *day41 = [ESDay new];
+	Day *day41 = [Day new];
 	day41.name = @"";
 	day41.headline = @"";
 	day41.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day41.date = startDay;
 	
-	ESDay *day42 = [ESDay new];
+	Day *day42 = [Day new];
 	day42.name = @"";
 	day42.headline = @"Leben für die Ewigkeit";
 	day42.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day42.date = startDay;
 	
-	ESDay *day43 = [ESDay new];
+	Day *day43 = [Day new];
 	day43.name = @"";
 	day43.headline = @"Hingabe an den Willen Gottes";
 	day43.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day43.date = startDay;
 	
-	ESDay *day44 = [ESDay new];
+	Day *day44 = [Day new];
 	day44.name = @"Gründonnerstag";
 	day44.headline = @"Im Kreuz ist Heil";
 	day44.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day44.date = startDay;
 	
-	ESDay *day45 = [ESDay new];
+	Day *day45 = [Day new];
 	day45.name = @"Karfreitag";
 	day45.headline = @"Im Kreuz ist Leben";
 	day45.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day45.date = startDay;
 	
-	ESDay *day46 = [ESDay new];
+	Day *day46 = [Day new];
 	day46.name = @"Karsamstag";
 	day46.headline = @"Neues Leben nach und nach";
 	day46.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day46.date = startDay;
 	
-	ESDay *day47 = [ESDay new];
+	Day *day47 = [Day new];
 	day47.name = @"Ostersonntag";
 	day47.headline = @"Strahlend jubelt die Natur dem Auferstandenen";
 	day47.number = startNumber++;
 	startDay = [startDay dateByAddingTimeInterval:60*60*24*1];
 	day47.date = startDay;
 	
-	ESDay *day48 = [ESDay new];
+	Day *day48 = [Day new];
 	day48.name = @"Ostermontag";
 	day48.headline = @"…und bliebe unser Herz brennend davon!";
 	day48.number = startNumber++;

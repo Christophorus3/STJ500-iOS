@@ -12,7 +12,7 @@
 @interface ESPageContainerViewController ()
 
 @property (nonatomic, weak) ESPageViewController *pageView;
-
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *revealButton;
 
 @end
 
@@ -29,6 +29,7 @@
     // Do any additional setup after loading the view.
 	//setup buttons:
 	
+	/*
 	if([[UIScreen mainScreen]bounds].size.height == 568) {
 		self.backgroundImageView.image = [UIImage imageNamed:@"Background4"];
 	} else {
@@ -37,11 +38,19 @@
 	
 	if([[UIScreen mainScreen]scale] == 1) {
 		self.backgroundImageView.image = [UIImage imageNamed:@"BackgroundS"];
-	}
+	} */
 	
 	UIButton *aboutButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
 	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:aboutButton];
 	[aboutButton addTarget:self action:@selector(showAbout:) forControlEvents:UIControlEventTouchUpInside];
+	
+	SWRevealViewController *revealViewController = self.revealViewController;
+	if ( revealViewController )
+	{
+		[self.revealButton setTarget: self.revealViewController];
+		[self.revealButton setAction: @selector( revealToggle: )];
+		[self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
+	}
 	
 	
 }

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ESDay : NSObject
+@interface Day : NSObject
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *headline;

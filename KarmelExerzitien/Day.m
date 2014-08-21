@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Christoph Wottawa. All rights reserved.
 //
 
-#import "ESDay.h"
+#import "Day.h"
 
-@implementation ESDay
+@implementation Day
 
 @synthesize name = _name;
 @synthesize date = _date;

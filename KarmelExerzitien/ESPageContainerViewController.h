@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ESAboutViewController.h"
+#import "SWRevealViewController/SWRevealViewController.h"
 
 @interface ESPageContainerViewController : UIViewController<ESAboutViewDelegate>
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8310A05519A48C7F0012ED7B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8310A05419A48C7F0012ED7B /* SWRevealViewController.m */; };
+		8310A05819A48E640012ED7B /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8310A05719A48E640012ED7B /* MenuViewController.m */; };
+		8310A05E19A4A77C0012ED7B /* BackgroundBlur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8310A05D19A4A77C0012ED7B /* BackgroundBlur.jpg */; };
 		8316641B18A3AB6500E1A84F /* ESDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8316641A18A3AB6500E1A84F /* ESDayViewController.m */; };
 		8316642818A5641A00E1A84F /* ESHTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8316642718A5641A00E1A84F /* ESHTMLViewController.m */; };
 		8316642B18A56A7400E1A84F /* ESPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8316642A18A56A7400E1A84F /* ESPageViewController.m */; };
@@ -16,7 +19,7 @@
 		8371E40C18B78F6E00D5DD4B /* ESAboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8371E40B18B78F6E00D5DD4B /* ESAboutView.m */; };
 		838542D218A27A4B004F9CB7 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838542D118A27A4B004F9CB7 /* iPhone.storyboard */; };
 		8397C1B418BB682300A45040 /* ESPageContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8397C1B318BB682300A45040 /* ESPageContainerViewController.m */; };
-		83A3BE8718B66C8700FAE861 /* ESDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A3BE8618B66C8700FAE861 /* ESDay.m */; };
+		83A3BE8718B66C8700FAE861 /* Day.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A3BE8618B66C8700FAE861 /* Day.m */; };
 		83BABDA61897AC5C008CDF5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BABDA51897AC5C008CDF5B /* Foundation.framework */; };
 		83BABDA81897AC5C008CDF5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BABDA71897AC5C008CDF5B /* CoreGraphics.framework */; };
 		83BABDAA1897AC5C008CDF5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BABDA91897AC5C008CDF5B /* UIKit.framework */; };
@@ -239,6 +242,7 @@
 		83E6588F18A62DBC004929F4 /* CustomCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E6588D18A62DBC004929F4 /* CustomCellBackground.m */; };
 		83E6589518A62EE3004929F4 /* ESCalenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E6589418A62EE3004929F4 /* ESCalenderViewController.m */; };
 		83E6589818A63BC4004929F4 /* ESMonthHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E6589718A63BC4004929F4 /* ESMonthHeader.m */; };
+		83E9F22E19A4004D009DD59B /* avila13-9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83E9F22D19A4004D009DD59B /* avila13-9.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -252,6 +256,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8310A05319A48C7F0012ED7B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		8310A05419A48C7F0012ED7B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		8310A05619A48E640012ED7B /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		8310A05719A48E640012ED7B /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		8310A05D19A4A77C0012ED7B /* BackgroundBlur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackgroundBlur.jpg; sourceTree = "<group>"; };
 		8316641918A3AB6500E1A84F /* ESDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDayViewController.h; sourceTree = "<group>"; };
 		8316641A18A3AB6500E1A84F /* ESDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDayViewController.m; sourceTree = "<group>"; };
 		8316642618A5641A00E1A84F /* ESHTMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESHTMLViewController.h; sourceTree = "<group>"; };
@@ -269,8 +278,8 @@
 		8385B4EC18BE3D030016FCA8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8397C1B218BB682300A45040 /* ESPageContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPageContainerViewController.h; sourceTree = "<group>"; };
 		8397C1B318BB682300A45040 /* ESPageContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPageContainerViewController.m; sourceTree = "<group>"; };
-		83A3BE8518B66C8700FAE861 /* ESDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDay.h; sourceTree = "<group>"; };
-		83A3BE8618B66C8700FAE861 /* ESDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDay.m; sourceTree = "<group>"; };
+		83A3BE8518B66C8700FAE861 /* Day.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Day.h; sourceTree = "<group>"; };
+		83A3BE8618B66C8700FAE861 /* Day.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Day.m; sourceTree = "<group>"; };
 		83BABDA21897AC5C008CDF5B /* KarmelExerzitien.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarmelExerzitien.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BABDA51897AC5C008CDF5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		83BABDA71897AC5C008CDF5B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -500,6 +509,7 @@
 		83E6589418A62EE3004929F4 /* ESCalenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESCalenderViewController.m; sourceTree = "<group>"; };
 		83E6589618A63BC4004929F4 /* ESMonthHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMonthHeader.h; sourceTree = "<group>"; };
 		83E6589718A63BC4004929F4 /* ESMonthHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMonthHeader.m; sourceTree = "<group>"; };
+		83E9F22D19A4004D009DD59B /* avila13-9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "avila13-9.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -526,6 +536,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8310A05219A48C7F0012ED7B /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8310A05319A48C7F0012ED7B /* SWRevealViewController.h */,
+				8310A05419A48C7F0012ED7B /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
 		8376EFA318A251A400674788 /* Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -733,8 +752,8 @@
 		83A3BE8418B66C6000FAE861 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				83A3BE8518B66C8700FAE861 /* ESDay.h */,
-				83A3BE8618B66C8700FAE861 /* ESDay.m */,
+				83A3BE8518B66C8700FAE861 /* Day.h */,
+				83A3BE8618B66C8700FAE861 /* Day.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -786,6 +805,9 @@
 				8371E40B18B78F6E00D5DD4B /* ESAboutView.m */,
 				838542D118A27A4B004F9CB7 /* iPhone.storyboard */,
 				83BABDC31897AC5C008CDF5B /* Images.xcassets */,
+				8310A05619A48E640012ED7B /* MenuViewController.h */,
+				8310A05719A48E640012ED7B /* MenuViewController.m */,
+				8310A05219A48C7F0012ED7B /* SWRevealViewController */,
 				83BABDAC1897AC5C008CDF5B /* Supporting Files */,
 				8371E40818B78B8900D5DD4B /* AboutView.xib */,
 				8397C1B218BB682300A45040 /* ESPageContainerViewController.h */,
@@ -826,7 +848,9 @@
 		83C0F63A18BD711D0004C675 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				83E9F22D19A4004D009DD59B /* avila13-9.jpg */,
 				8349498218F88E4D000A5924 /* Auferstehung_Christi.jpg */,
+				8310A05D19A4A77C0012ED7B /* BackgroundBlur.jpg */,
 				83C0F63B18BD71290004C675 /* Background.png */,
 				83C0F63C18BD71290004C675 /* Background4.png */,
 				83C0F63D18BD71290004C675 /* BackgroundS.png */,
@@ -962,6 +986,7 @@
 				83C0F75E18BD719A0004C675 /* 20.jpg in Resources */,
 				83C0F75918BD719A0004C675 /* 19.html in Resources */,
 				83C0F7B518BD719B0004C675 /* 41.jpg in Resources */,
+				83E9F22E19A4004D009DD59B /* avila13-9.jpg in Resources */,
 				83C0F7B018BD719B0004C675 /* 40.html in Resources */,
 				83C0F7D418BD719B0004C675 /* style.css in Resources */,
 				83C0F76518BD719A0004C675 /* 22.html in Resources */,
@@ -1090,6 +1115,7 @@
 				83C0F73E18BD719A0004C675 /* 12.jpg in Resources */,
 				83C0F72E18BD719A0004C675 /* 8.jpg in Resources */,
 				83C0F77818BD719A0004C675 /* 26e.html in Resources */,
+				8310A05E19A4A77C0012ED7B /* BackgroundBlur.jpg in Resources */,
 				83C0F64618BD71290004C675 /* edith.jpg in Resources */,
 				83C0F73518BD719A0004C675 /* 10.html in Resources */,
 				83C0F72B18BD719A0004C675 /* 7e.html in Resources */,
@@ -1187,13 +1213,15 @@
 			files = (
 				83DE247918B7719400FE7005 /* ESAboutViewController.m in Sources */,
 				83BABDB61897AC5C008CDF5B /* ESAppDelegate.m in Sources */,
+				8310A05519A48C7F0012ED7B /* SWRevealViewController.m in Sources */,
+				8310A05819A48E640012ED7B /* MenuViewController.m in Sources */,
 				8316642B18A56A7400E1A84F /* ESPageViewController.m in Sources */,
 				8316642E18A56D4000E1A84F /* ESDayContentController.m in Sources */,
 				8316642818A5641A00E1A84F /* ESHTMLViewController.m in Sources */,
 				83E6589518A62EE3004929F4 /* ESCalenderViewController.m in Sources */,
 				83E6588F18A62DBC004929F4 /* CustomCellBackground.m in Sources */,
 				83BABDB21897AC5C008CDF5B /* main.m in Sources */,
-				83A3BE8718B66C8700FAE861 /* ESDay.m in Sources */,
+				83A3BE8718B66C8700FAE861 /* Day.m in Sources */,
 				8397C1B418BB682300A45040 /* ESPageContainerViewController.m in Sources */,
 				8371E40C18B78F6E00D5DD4B /* ESAboutView.m in Sources */,
 				8316641B18A3AB6500E1A84F /* ESDayViewController.m in Sources */,
@@ -1275,7 +1303,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "CC17F1B5-7214-42DD-897E-4B09DEE75CA7";
+				PROVISIONING_PROFILE = "81c1500a-0dbf-43b2-ba1b-c27c690f783e";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1309,7 +1337,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PROVISIONING_PROFILE = "CC17F1B5-7214-42DD-897E-4B09DEE75CA7";
+				PROVISIONING_PROFILE = "81c1500a-0dbf-43b2-ba1b-c27c690f783e";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
@@ -1321,14 +1349,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KarmelExerzitien/KarmelExerzitien-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/KarmelExerzitien/KarmelExerzitien-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = KarmelExerzitien;
-				PROVISIONING_PROFILE = "CC17F1B5-7214-42DD-897E-4B09DEE75CA7";
+				PROVISIONING_PROFILE = "81c1500a-0dbf-43b2-ba1b-c27c690f783e";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1338,14 +1366,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KarmelExerzitien/KarmelExerzitien-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/KarmelExerzitien/KarmelExerzitien-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = KarmelExerzitien;
-				PROVISIONING_PROFILE = "CC17F1B5-7214-42DD-897E-4B09DEE75CA7";
+				PROVISIONING_PROFILE = "81c1500a-0dbf-43b2-ba1b-c27c690f783e";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ESDay.h"
+#import "Day.h"
 
 @interface ESDayViewController : UIViewController
 
@@ -16,7 +16,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *dayLabel;
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
 
-@property (nonatomic, strong) ESDay *day;
+@property (nonatomic, strong) Day *day;
 
 @property (nonatomic) int index;
 
