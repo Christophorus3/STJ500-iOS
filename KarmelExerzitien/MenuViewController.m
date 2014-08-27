@@ -67,7 +67,8 @@
 
     }
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath: indexPath];
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath: indexPath];
+	UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
  
     return cell;
 }
