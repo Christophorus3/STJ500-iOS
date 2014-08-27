@@ -1,5 +1,5 @@
 //
-//  ESDay.m
+//  Day.m
 //  FastenKalender
 //
 //  Created by Christoph Wottawa on 20.02.14.
