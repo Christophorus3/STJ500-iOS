@@ -14,6 +14,8 @@
 		8316642818A5641A00E1A84F /* ESHTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8316642718A5641A00E1A84F /* ESHTMLViewController.m */; };
 		8316642B18A56A7400E1A84F /* ESPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8316642A18A56A7400E1A84F /* ESPageViewController.m */; };
 		8316642E18A56D4000E1A84F /* ESDayContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8316642D18A56D4000E1A84F /* ESDayContentController.m */; };
+		8321435919AE0EB300E37430 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8321435819AE0EB300E37430 /* Bolts.framework */; };
+		8321435B19AE0EC100E37430 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8321435A19AE0EC100E37430 /* Parse.framework */; };
 		8349498318F88E4D000A5924 /* Auferstehung_Christi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8349498218F88E4D000A5924 /* Auferstehung_Christi.jpg */; };
 		8371E40918B78B8A00D5DD4B /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8371E40818B78B8900D5DD4B /* AboutView.xib */; };
 		8371E40C18B78F6E00D5DD4B /* ESAboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8371E40B18B78F6E00D5DD4B /* ESAboutView.m */; };
@@ -269,6 +271,8 @@
 		8316642A18A56A7400E1A84F /* ESPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPageViewController.m; sourceTree = "<group>"; };
 		8316642C18A56D4000E1A84F /* ESDayContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDayContentController.h; sourceTree = "<group>"; };
 		8316642D18A56D4000E1A84F /* ESDayContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDayContentController.m; sourceTree = "<group>"; };
+		8321435819AE0EB300E37430 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		8321435A19AE0EC100E37430 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		8349498218F88E4D000A5924 /* Auferstehung_Christi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Auferstehung_Christi.jpg; sourceTree = "<group>"; };
 		8371E40818B78B8900D5DD4B /* AboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutView.xib; sourceTree = "<group>"; };
 		8371E40A18B78F6E00D5DD4B /* ESAboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAboutView.h; sourceTree = "<group>"; };
@@ -520,6 +524,8 @@
 				83BABDA81897AC5C008CDF5B /* CoreGraphics.framework in Frameworks */,
 				83BABDAA1897AC5C008CDF5B /* UIKit.framework in Frameworks */,
 				83BABDA61897AC5C008CDF5B /* Foundation.framework in Frameworks */,
+				8321435919AE0EB300E37430 /* Bolts.framework in Frameworks */,
+				8321435B19AE0EC100E37430 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,6 +786,8 @@
 		83BABDA41897AC5C008CDF5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8321435A19AE0EC100E37430 /* Parse.framework */,
+				8321435819AE0EB300E37430 /* Bolts.framework */,
 				83BABDA51897AC5C008CDF5B /* Foundation.framework */,
 				83BABDA71897AC5C008CDF5B /* CoreGraphics.framework */,
 				83BABDA91897AC5C008CDF5B /* UIKit.framework */,
@@ -1351,6 +1359,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KarmelExerzitien/KarmelExerzitien-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/KarmelExerzitien/KarmelExerzitien-Info.plist";
@@ -1368,6 +1380,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KarmelExerzitien/KarmelExerzitien-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/KarmelExerzitien/KarmelExerzitien-Info.plist";
