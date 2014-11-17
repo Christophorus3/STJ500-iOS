@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  KarmelExerzitien
+
+  Created by Christoph Wottawa on 15.11.14.
+  Copyright (c) 2014 Christoph Wottawa. All rights reserved.
+*/
+
+"paypal" = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=583FUHK8EQFDU";
+"Gebetsanliegen" = "Gebetsanliegen";
+"Ich bitte um Gebet für folgendes Anliegen:" = "Ich bitte um Gebet für folgendes Anliegen:";
+"karmel" = "http://www.karmel.at";
+"Day_de" = "Day_de";
+"Week_de" = "Week_de";

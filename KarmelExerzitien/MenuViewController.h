@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
 @interface SWUITableViewCell : UITableViewCell
+
 @property (nonatomic) IBOutlet UILabel *label;
+
 @end
 
-@interface MenuViewController : UITableViewController
+@interface MenuViewController : UITableViewController<MFMailComposeViewControllerDelegate>
+
+@property (nonatomic, strong) MFMailComposeViewController *mailComposer;
 
 @end

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface ESPageViewController : UIPageViewController<UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
 @property (nonatomic, strong) NSArray *days;
+@property (nonatomic, strong) NSMutableDictionary *dayCache;
 @property (nonatomic) int currentPage;
 
 

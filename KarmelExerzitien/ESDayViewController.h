@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 #import "Day.h"
 
 @interface ESDayViewController : UIViewController
@@ -16,8 +17,11 @@
 @property (nonatomic, weak) IBOutlet UILabel *dayLabel;
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
 
+@property (atomic, assign) NSMutableDictionary *dayCache;
+
 @property (nonatomic, strong) Day *day;
 
 @property (nonatomic) int index;
+@property (nonatomic) NSDate *date;
 
 @end

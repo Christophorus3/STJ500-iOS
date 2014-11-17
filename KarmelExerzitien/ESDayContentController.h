@@ -8,13 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "Day.h"
-#import "ESAboutViewController.h"
+#import "Week.h"
 
-@interface ESDayContentController : UITabBarController<ESAboutViewDelegate>
+@interface ESDayContentController : UITabBarController
 
 @property (nonatomic, strong) Day *day;
-@property (nonatomic, weak) ESAboutViewController *about;
+@property (nonatomic, strong) Week *week;
 
-- (void)showAbout:(id)sender;
 
 @end

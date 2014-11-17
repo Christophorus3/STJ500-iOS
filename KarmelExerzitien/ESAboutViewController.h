@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
+#import "SWRevealViewController/SWRevealViewController.h"
 
 @protocol ESAboutViewDelegate <NSObject>
 

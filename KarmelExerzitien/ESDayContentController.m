@@ -15,39 +15,37 @@
 
 @implementation ESDayContentController
 
-@synthesize day = _day;
-@synthesize about = _about;
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	//Add an About Button to the NavBar
-	UIButton *aboutButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
-	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:aboutButton];
-	[aboutButton addTarget:self action:@selector(showAbout:) forControlEvents:UIControlEventTouchUpInside];
+	//UIButton *aboutButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+	//self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:aboutButton];
+	//[aboutButton addTarget:self action:@selector(showAbout:) forControlEvents:UIControlEventTouchUpInside];
 	
 	// Prepare the two content Controllers
-	ESHTMLViewController *impuls = (ESHTMLViewController *)self.viewControllers[0];
-	ESHTMLViewController *evangelium = (ESHTMLViewController *)self.viewControllers[1];
+	ESHTMLViewController *woche = (ESHTMLViewController *)self.viewControllers[0];
+	ESHTMLViewController *tag = (ESHTMLViewController *)self.viewControllers[1];
+	ESHTMLViewController *evangelium = (ESHTMLViewController *)self.viewControllers[2];
 	
-	impuls.title = @"Impuls";
-	evangelium.title = @"Evangelium";
+	//impuls.title = @"Impuls";
+	//evangelium.title = @"Evangelium";
 	
 	NSURL *contentURL = [[NSBundle mainBundle] URLForResource:[@(self.day.number) stringValue] withExtension:@"html"];
-	NSURL *gospelURL = [[NSBundle mainBundle] URLForResource:[[@(self.day.number) stringValue] stringByAppendingString:@"e"] withExtension:@"html"];
+	NSURL *gospelURL = [[NSBundle mainBundle] URLForResource:@"week" withExtension:@"html"];
+	NSString *gospelContent = [self buildContentString];
 	
-	impuls.contentURL = contentURL;
+	tag.contentURL = contentURL;
 	evangelium.contentURL = gospelURL;
+	evangelium.content = gospelContent;
 	
 }
 
-- (void)showAbout:(id)sender
-{
-	self.about = [self.storyboard instantiateViewControllerWithIdentifier:@"About"];
-	UINavigationController *navCon = [[UINavigationController alloc] initWithRootViewController:_about];
-	self.about.delegate = self;
-	[self presentViewController:navCon animated:YES completion:nil];
-	
+- (NSString*)buildContentString {
+	NSURL *contentURL = [[NSBundle mainBundle] URLForResource:@"week" withExtension:@"html"];
+	NSString *contentString = [NSString stringWithContentsOfURL:contentURL usedEncoding:nil error:nil];
+	NSString *result = [contentString stringByReplacingOccurrencesOfString:@"<verse>" withString:@"Das ist der Testvers!"];
+	return result;
 }
 
 - (void)dismissAbout

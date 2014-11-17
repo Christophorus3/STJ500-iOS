@@ -11,11 +11,13 @@
 
 @interface ESAboutViewController ()
 
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *revealButton;
+
 @end
 
 @implementation ESAboutViewController
 
-@synthesize scrollView = _scrollView;
+//@synthesize scrollView = _scrollView;
 @synthesize mailComposer = _mailComposer;
 
 
@@ -23,19 +25,29 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-	NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"AboutView" owner:self options:nil];
+	//NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"AboutView" owner:self options:nil];
 	
-	UIView *contentView = [nib objectAtIndex:0];
+	//UIView *contentView = [nib objectAtIndex:0];
 	
-	[self.scrollView addSubview:contentView];
-	self.scrollView.contentSize = CGSizeMake(320, 920);
+	//[self.view addSubview:contentView];
+	//self.scrollView.contentSize = CGSizeMake(320, 920);
 	
+	/*
 	UIBarButtonItem *item = [[UIBarButtonItem alloc] init];
 	item.title = @"Fertig";
 	item.target = self.delegate;
 	item.action = @selector(dismissAbout);
+	*/
+	//self.navigationItem.leftBarButtonItem = item; //[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self.delegate action:@selector(dismissAbout)];
 	
-	self.navigationItem.leftBarButtonItem = item; //[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self.delegate action:@selector(dismissAbout)];
+	SWRevealViewController *revealViewController = self.revealViewController;
+	if ( revealViewController )
+	{
+		[self.revealButton setTarget: self.revealViewController];
+		[self.revealButton setAction: @selector(revealToggle:)];
+		//[self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
+	}
+	
 }
 
 - (void)didReceiveMemoryWarning

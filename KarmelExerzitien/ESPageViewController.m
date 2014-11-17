@@ -12,14 +12,9 @@
 
 @interface ESPageViewController ()
 
-- (ESDayViewController *)viewControllerForPageNumber:(int)number;
-
 @end
 
 @implementation ESPageViewController
-
-@synthesize days = _days;
-@synthesize currentPage = _currentPage;
 
 - (void)viewDidLoad
 {
@@ -27,11 +22,26 @@
 	// Do any additional setup after loading the view.
 	
 	self.days = [self createDayArray];
+	_dayCache = [[NSMutableDictionary alloc] init];
 	
-	self.currentPage =  1; //[self currentDayPageNumber];
+	self.currentPage =  0; //[self currentDayPageNumber];
 	
 	self.dataSource = self;
 	self.delegate = self;
+	
+	
+	NSDateComponents *comps = [[NSDateComponents alloc] init];
+	comps.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+	comps.day = 1;
+	comps.month = 12;
+	comps.year = 2014;
+	comps.hour = 0;
+	comps.minute = 0;
+	
+	NSDate *day = [[NSCalendar currentCalendar] dateFromComponents:comps];
+	
+	[self fetchDayByDate:day];
+	
 	
 	[self setViewControllers:@[[self viewControllerForPageNumber:self.currentPage]]
 				   direction:UIPageViewControllerNavigationDirectionForward
@@ -43,13 +53,69 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-	return [self viewControllerForPageNumber:((ESDayViewController *) viewController).index + 1];
+	//return [self viewControllerForPageNumber:((ESDayViewController *) viewController).index + 1];
+	return nil;
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-	return [self viewControllerForPageNumber:((ESDayViewController *) viewController).index - 1];
+	//return [self viewControllerForPageNumber:((ESDayViewController *) viewController).index - 1];
+	return nil;
 }
+
+- (ESDayViewController *)viewControllerForDate:(NSDate *)date {
+	
+	return nil;
+}
+
+- (void)fetchDayByDate:(NSDate*)date {
+	PFQuery *query = [PFQuery queryWithClassName:NSLocalizedString(@"Day_de", nil)];
+	[query whereKey:@"date" equalTo:date];
+	query.limit = 1;
+	
+	
+	[query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+		if (!error) {
+			// The find succeeded.
+			NSLog(@"Successfully retrieved %lu entries", (unsigned long)objects.count);
+			// Do something with the found objects
+			for (PFObject *object in objects) {
+				NSLog(@"%@", object.objectId);
+				
+				Day *day = [[Day alloc] init];
+				if(object) {
+					day.date = object[@"date"];
+					day.week_id = [object[@"week_id"] intValue];
+					day.lit_day = object[@"lit_day"];
+					day.title = object[@"title"];
+					day.title_image = object[@"title_image"];
+					day.bible_verse = object[@"bible_verse"];
+					day.impulse = object[@"impulse"];
+					day.image = object[@"image"];
+					day.audio_link = object[@"audio_link"];
+					day.audio_desc = object[@"audio_desc"];
+					day.video_link = object[@"video_link"];
+					day.video_desc = object[@"video_desc"];
+					day.call_gospel = object[@"call_gospel"];
+					day.verse_gospel = object[@"verse_gospel"];
+					day.gospel = object[@"gospel"];
+					day.reading_link = object[@"reading_link"];
+					day.reading_desc = object[@"reading_desc"];
+					
+					self.dayCache[day.date] = day;
+					
+					NSLog(@"Object added to cache: \"%@\"", day.title);
+				}
+				
+			}
+		} else {
+			// Log details of the failure
+			NSLog(@"Error: %@ %@", error, [error userInfo]);
+		}
+	}];
+	
+}
+
 
 - (ESDayViewController *)viewControllerForPageNumber:(int)number
 {
@@ -169,6 +235,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)date:(NSDate*)date1 isSameDayAsDate:(NSDate*)date2 {
+    NSCalendar* calendar = [NSCalendar currentCalendar];
+	
+    unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit;
+    NSDateComponents* comp1 = [calendar components:unitFlags fromDate:date1];
+    NSDateComponents* comp2 = [calendar components:unitFlags fromDate:date2];
+	
+    return [comp1 day]   == [comp2 day] &&
+	[comp1 month] == [comp2 month] &&
+	[comp1 year]  == [comp2 year];
 }
 
 - (NSArray *)createDayArray {

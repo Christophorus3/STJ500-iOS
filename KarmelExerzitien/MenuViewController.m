@@ -30,12 +30,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return 7;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    /*static NSString *CellIdentifier = @"Cell";
 
     switch ( indexPath.row )
     {
@@ -65,12 +65,45 @@
 
 
 
-    }
+    }*/
 
     //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath: indexPath];
 	UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
  
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+	
+	
+	if([cell.reuseIdentifier isEqualToString:@"kontakt"]) {
+		self.mailComposer = [[MFMailComposeViewController alloc] init];
+		self.mailComposer.mailComposeDelegate = self;
+		[self.mailComposer setToRecipients:@[@"online-exerzitien@karmel.at"]];
+		[self.mailComposer setSubject:@""];
+		[self.mailComposer setMessageBody:@"" isHTML:YES];
+		[self presentViewController:self.mailComposer animated:YES completion:nil];
+	}
+	
+	if([cell.reuseIdentifier isEqualToString:@"gebetsanliegen"]) {
+		self.mailComposer = [[MFMailComposeViewController alloc] init];
+		self.mailComposer.mailComposeDelegate = self;
+		[self.mailComposer setToRecipients:@[@"online-exerzitien@karmel.at"]];
+		[self.mailComposer setSubject:NSLocalizedString(@"Gebetsanliegen", nil)];
+		[self.mailComposer setMessageBody:NSLocalizedString(@"Ich bitte um Gebet für folgendes Anliegen:", nil) isHTML:YES];
+		[self presentViewController:self.mailComposer animated:YES completion:nil];
+	}
+	
+	if([[cell reuseIdentifier] isEqualToString:@"karmel"]) {
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:NSLocalizedString(@"karmel", nil)]];
+	}
+	
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark state preservation / restoration

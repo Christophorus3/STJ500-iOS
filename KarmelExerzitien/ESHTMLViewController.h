@@ -13,5 +13,6 @@
 @property (nonatomic, weak) IBOutlet UIWebView *webView;
 
 @property (nonatomic, strong) NSURL *contentURL;
+@property (nonatomic, strong) NSString *content;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "ESAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation ESAppDelegate
 
@@ -18,6 +19,10 @@
 		//[[UINavigationBar appearance] setBarTintColor:purple];
 		//[[UITabBar appearance] setBarTintColor:purple];
 	//}
+	
+	//Start Parse:
+	[Parse setApplicationId:@"UCTuKq4fUkpZamBZEdbfxkmD7VDOFO6NeiYhMPX5"
+				  clientKey:@"UZCjN468y2bkewA2TL3DsL1X5yYIVRTbBCfHSIFQ"];
 	
 	UILocalNotification *locationNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
     if (locationNotification) {

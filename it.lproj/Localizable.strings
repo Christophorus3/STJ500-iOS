@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  KarmelExerzitien
+
+  Created by Christoph Wottawa on 15.11.14.
+  Copyright (c) 2014 Christoph Wottawa. All rights reserved.
+*/
+
+"paypal" = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&lc=IT&hosted_button_id=583FUHK8EQFDU";
+/* Das ist die Betreffzeile für das Gebetsanliegen Mail: */
+"Gebetsanliegen" = "preghiamo per voi";
+/* Und das hier die Zeile die im Mail drin steht, nach dem die Leute ihr Gebetsanliegen verfassen können */
+"Ich bitte um Gebet für folgendes Anliegen:" = "Chiedo la vostra preghiera per questa intenzione:";
+
+"karmel" = "http://www.carmeloveneto.it";
+"Day_de" = "Day_it";
+"Week_de" = "Week_it";
