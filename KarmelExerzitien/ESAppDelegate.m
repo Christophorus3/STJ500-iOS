@@ -24,10 +24,12 @@
 	[Parse setApplicationId:@"UCTuKq4fUkpZamBZEdbfxkmD7VDOFO6NeiYhMPX5"
 				  clientKey:@"UZCjN468y2bkewA2TL3DsL1X5yYIVRTbBCfHSIFQ"];
 	
-	UILocalNotification *locationNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
-    if (locationNotification) {
+	UILocalNotification *localNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if (localNotification) {
         // Set icon badge number to zero
-        application.applicationIconBadgeNumber = 0;
+		application.applicationIconBadgeNumber = 0;
+	
+		[application cancelLocalNotification:localNotification];
     }
 	
     return YES;
@@ -46,6 +48,7 @@
         [alert show];
     }
 	
+	[application cancelLocalNotification:notification];
 	application.applicationIconBadgeNumber = 0;
 	
 }

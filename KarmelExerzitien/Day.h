@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
 @interface Day : NSObject <NSCoding>
 
@@ -25,15 +26,12 @@
 @property (nonatomic) NSString *bible_verse;
 @property (nonatomic) NSString *impulse;
 @property (nonatomic) NSURL *image;
-@property (nonatomic) NSURL *audio_link;
-@property (nonatomic) NSString *audio_desc;
-@property (nonatomic) NSURL *video_link;
-@property (nonatomic) NSString *video_desc;
 @property (nonatomic) NSString *call_gospel;
 @property (nonatomic) NSString *verse_gospel;
 @property (nonatomic) NSString *gospel;
-@property (nonatomic) NSURL *reading_link;
-@property (nonatomic) NSString *reading_desc;
+@property (nonatomic) NSString *gospel_reader;
+@property (nonatomic) NSURL *reader_image;
+@property (nonatomic) NSURL *gospel_audio;
 
 - (NSString *)dateDescription;
 

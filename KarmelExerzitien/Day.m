@@ -22,6 +22,7 @@
 	return result;
 }
 
+
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
 	self = [super init];
@@ -36,15 +37,12 @@
 		_bible_verse = [aDecoder decodeObjectForKey:@"bible_verse"];
 		_impulse = [aDecoder decodeObjectForKey:@"impulse"];
 		_image = [aDecoder decodeObjectForKey:@"image"];
-		_audio_link = [aDecoder decodeObjectForKey:@"audio_link"];
-		_audio_desc = [aDecoder decodeObjectForKey:@"audio_desc"];
-		_video_link = [aDecoder decodeObjectForKey:@"video_link"];
-		_video_desc = [aDecoder decodeObjectForKey:@"video_desc"];
 		_call_gospel = [aDecoder decodeObjectForKey:@"call_gospel"];
 		_verse_gospel = [aDecoder decodeObjectForKey:@"verse_gospel"];
 		_gospel = [aDecoder decodeObjectForKey:@"gospel"];
-		_reading_link = [aDecoder decodeObjectForKey:@"reading_link"];
-		_reading_desc = [aDecoder decodeObjectForKey:@"reading_desc"];
+		_gospel_reader = [aDecoder decodeObjectForKey:@"gospel_reader"];
+		_reader_image = [aDecoder decodeObjectForKey:@"reader_image"];
+		_gospel_audio = [aDecoder decodeObjectForKey:@"gospel_audio"];
 	}
 	return self;
 }
@@ -60,15 +58,13 @@
 	[aCoder encodeObject:_bible_verse forKey:@"bible_verse"];
 	[aCoder encodeObject:_impulse forKey:@"impulse"];
 	[aCoder encodeObject:_image forKey:@"image"];
-	[aCoder encodeObject:_audio_link forKey:@"audio_link"];
-	[aCoder encodeObject:_audio_desc forKey:@"audio_desc"];
-	[aCoder encodeObject:_video_link forKey:@"video_link"];
-	[aCoder encodeObject:_video_desc forKey:@"video_desc"];
 	[aCoder encodeObject:_call_gospel forKey:@"call_gospel"];
 	[aCoder encodeObject:_verse_gospel forKey:@"verse_gospel"];
 	[aCoder encodeObject:_gospel forKey:@"gospel"];
-	[aCoder encodeObject:_reading_link forKey:@"reading_link"];
-	[aCoder encodeObject:_reading_desc forKey:@"reading_desc"];
+	[aCoder encodeObject:_gospel_reader forKey:@"gospel_reader"];
+	[aCoder encodeObject:_reader_image forKey:@"reader_image"];
+	[aCoder encodeObject:_gospel_audio forKey:@"gospel_audio"];
+	
 }
 
 @end

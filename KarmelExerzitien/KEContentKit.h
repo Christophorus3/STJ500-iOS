@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
+#import "NSDate+Timeconvert.h"
 
 @interface KEContentKit : NSObject
+
++ (KEContentKit *)sharedInstance;
 
 @end

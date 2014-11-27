@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  KarmelExerzitien
+
+  Created by Christoph Wottawa on 15.11.14.
+  Copyright (c) 2014 Christoph Wottawa. All rights reserved.
+*/
+
+"paypal" = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&lc=EN&hosted_button_id=583FUHK8EQFDU";
+"Gebetsanliegen" = "Prayer Intentions";
+"Ich bitte um Gebet für folgendes Anliegen:" = "I would like prayer for the following intentions:";
+"karmel" = "http://www.carmelitaniscalzi.com/info/en";
+"Day_de" = "Day_en";
+"Week_de" = "Week_en";
+"dateFormat" = "MMMM d";
+"KarmelExerzitien-Impuls für Heute verfügbar." = "Carmelite Retreat inspiraiton for today available";
+"Lesen" = "Read";

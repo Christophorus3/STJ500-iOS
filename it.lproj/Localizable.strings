@@ -12,6 +12,9 @@
 /* Und das hier die Zeile die im Mail drin steht, nach dem die Leute ihr Gebetsanliegen verfassen können */
 "Ich bitte um Gebet für folgendes Anliegen:" = "Chiedo la vostra preghiera per questa intenzione:";
 
-"karmel" = "http://www.carmeloveneto.it";
+"karmel" = "http://www.carmelitaniscalzi.com/info/it";
 "Day_de" = "Day_it";
 "Week_de" = "Week_it";
+"dateFormat" = "d MMMM";
+"KarmelExerzitien-Impuls für Heute verfügbar." = "L'impulso quotidiano degli esercizi carmelitani è disponibile.";
+"Lesen" = "leggere";

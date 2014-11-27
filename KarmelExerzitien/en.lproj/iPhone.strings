@@ -1,159 +1,153 @@
 
 /* Class = "IBUILabel"; text = "oder über Paypal spenden:"; ObjectID = "4wx-j6-4nO"; */
-"4wx-j6-4nO.text" = "o fare un dono con Paypal:";
+"4wx-j6-4nO.text" = "or donate via Paypal:";
 
 /* Class = "IBUIViewController"; title = "Tag"; ObjectID = "66z-yf-CRt"; */
-"66z-yf-CRt.title" = "giorno";
+"66z-yf-CRt.title" = "Day";
 
 /* Class = "IBUIViewController"; title = "Woche"; ObjectID = "6Fc-Ib-NT4"; */
-"6Fc-Ib-NT4.title" = "settimana";
+"6Fc-Ib-NT4.title" = "Week";
 
 /* Class = "IBUILabel"; text = "Kontakt"; ObjectID = "6ML-be-NtN"; */
-"6ML-be-NtN.text" = "Contatto";
+"6ML-be-NtN.text" = "Contact";
 
 /* Class = "IBUITabBarItem"; title = "Tag"; ObjectID = "7WH-sf-ypQ"; */
-"7WH-sf-ypQ.title" = "Giorno";
+"7WH-sf-ypQ.title" = "Day";
 
 /* Class = "IBUIBarButtonItem"; title = "zurück"; ObjectID = "9ie-ba-Z76"; */
-"9ie-ba-Z76.title" = "indietro";
+"9ie-ba-Z76.title" = "back";
 
 /* Class = "IBUILabel"; text = "Label"; ObjectID = "A4W-1D-bZY"; */
-"A4W-1D-bZY.text" = "etichetta";
+"A4W-1D-bZY.text" = "Label";
 
 /* Class = "IBUINavigationItem"; title = "KarmelExerzitien"; ObjectID = "Aa3-qX-SFv"; */
-"Aa3-qX-SFv.title" = "esercizi carmelitani";
+"Aa3-qX-SFv.title" = "Carmelite Retreat";
 
-/* Class = "IBUILabel"; text = „Die Exerzitien sind kostenlos! Falls Sie uns unterstützen wollen, können Sie Ihre Spende auf dieses Konto überweisen:"; ObjectID = "Am4-GW-UPB"; */
-"Am4-GW-UPB.text" = "Questi esercizi sono gratis! Se volete sostenerci con una donazione, potete fare un versamento su questo conto:";
-
-/* Class = "IBUILabel"; text = "Label"; ObjectID = "Au0-uf-QLb"; */
-"Au0-uf-QLb.text" = "etichetta";
+/* Class = "IBUILabel"; text = "Die Exerzitien sind kostenlos! Falls Sie uns unterstützen wollen, können Sie Ihre Spende auf dieses Konto überweisen:"; ObjectID = "Am4-GW-UPB"; */
+"Am4-GW-UPB.text" = "Carmelite Retreat is free. If you want to support our work, you can transfer your donation to this account:";
 
 /* Class = "IBUIBarButtonItem"; title = "Kalender"; ObjectID = "CvO-1b-eg7"; */
-"CvO-1b-eg7.title" = "Calendario";
+"CvO-1b-eg7.title" = "Calendar";
 
 /* Class = "IBUILabel"; text = "uns auf facebook besuchen"; ObjectID = "DQ7-KY-KQj"; */
-"DQ7-KY-KQj.text" = "venite a trovarci su facebook";
+"DQ7-KY-KQj.text" = "visit us on facebook";
 
 /* Class = "IBUILabel"; text = "Karmeliten in Wien"; ObjectID = "Jn6-WS-Cp9"; */
-"Jn6-WS-Cp9.text" = "Carmelitani Scalzi a Vienna";
+"Jn6-WS-Cp9.text" = "Carmelites in Vienna";
 
 /* Class = "IBUIButton"; normalTitle = "via Paypal spenden"; ObjectID = "MA2-fW-fxd"; */
-"MA2-fW-fxd.normalTitle" = "fare un dono con Paypal";
+"MA2-fW-fxd.normalTitle" = "donate via paypal";
 
 /* Class = "IBUILabel"; text = "Ab dem 30. November finden Sie hier einen täglichen Impuls, bestehend aus Texten des Karmeliten P. Jacques von Jesus (1900-1945) und aus den Evangelien der Liturgie während der Adventzeit 2014."; ObjectID = "OuR-Kf-cpK"; */
-"OuR-Kf-cpK.text" = "A partire dal 30 novembre troverete qui un impulso giornaliero con testi di p. Jacques di Gesù (1900-194) e del Vangelo per tutto l’Avvento 2014.";
+"OuR-Kf-cpK.text" = "Starting November 30 you will find a daily message consisting of texts by Père Jacques and from the Gospels of the Liturgy during Advent 2014.";
 
 /* Class = "IBUILabel"; text = "Durch wischen nach links oder rechts können Sie zwischen allen bis zum heutigen Tag erschienen Texten navigieren."; ObjectID = "Pl8-da-jlK"; */
-"Pl8-da-jlK.text" = "Glissando a destra e a sinistra sullo schermo potete leggere i testi apparsi finora.";
+"Pl8-da-jlK.text" = "By swiping to left or to right you can navigate between all the texts up through today's text.";
 
 /* Class = "IBUILabel"; text = "Ihre Karmeliten"; ObjectID = "R8e-ZY-lVg"; */
-"R8e-ZY-lVg.text" = "i carmelitani scalzi";
+"R8e-ZY-lVg.text" = "the Carmelites in Austria";
 
 /* Class = "IBUILabel"; text = "Die Online Exerzitien bieten Ihnen jede Woche im Advent eine Meditation über das Sonntagsevangelium und täglich einen kurzen Impuls zur Besinnung. Alle Texte bauen auf Gedanken vom Karmeliten P. Jacques de Jesus auf."; ObjectID = "Te2-G3-qpB"; */
-"Te2-G3-qpB.text" = "Gli esercizi carmelitani vi propongono ogni settimana d’Avvento una mediazione sul Vangelo della domenica ed ogni giorno un impulso per la preghiera personale. I testi si basano su pensieri del carmelitano scalzo p. Jacques di Gesù.";
+"Te2-G3-qpB.text" = "The online retreat offers you a daily inspiration for reflection and prayer. The daily messages consist of texts by Père Jacques and from the Gospels of the Liturgy during the season of Advent.";
 
 /* Class = "IBUIViewController"; title = "Tag"; ObjectID = "Uqf-v2-Rxq"; */
-"Uqf-v2-Rxq.title" = "giorno";
-
-/* Class = "IBUILabel"; text = "Label"; ObjectID = "VXc-Pt-YLZ"; */
-"VXc-Pt-YLZ.text" = "etichetta";
+"Uqf-v2-Rxq.title" = "Day";
 
 /* Class = "IBUITabBarItem"; title = "Evangelium"; ObjectID = "VsR-gq-xXO"; */
-"VsR-gq-xXO.title" = "Vangelo";
+"VsR-gq-xXO.title" = "Gospel";
 
 /* Class = "IBUIBarButtonItem"; title = "zurück"; ObjectID = "WV8-R6-NLb"; */
-"WV8-R6-NLb.title" = "indietro";
+"WV8-R6-NLb.title" = "back";
 
 /* Class = "IBUIViewController"; title = "Über KarmelExerzitien"; ObjectID = "XRx-Jx-H73"; */
-"XRx-Jx-H73.title" = "sugli esercizi";
+"XRx-Jx-H73.title" = "About Carmelite Retreat";
 
 /* Class = "IBUINavigationItem"; title = "KarmelExerzitien"; ObjectID = "Xpj-0c-irk"; */
-"Xpj-0c-irk.title" = "Esercizi Carmelitani";
+"Xpj-0c-irk.title" = "Carmelite Retreat";
 
 /* Class = "IBUILabel"; text = "Der Karmel"; ObjectID = "Yq3-Lt-CZO"; */
-"Yq3-Lt-CZO.text" = "il Carmelo";
+"Yq3-Lt-CZO.text" = "Carmel online";
 
 /* Class = "IBUITableViewSection"; headerTitle = "Menü"; ObjectID = "Z1K-3m-8x3"; */
 "Z1K-3m-8x3.headerTitle" = "Menu";
 
 /* Class = "IBUIButton"; normalTitle = "Website der ESGÖ"; ObjectID = "Z7a-ty-Qy7"; */
-"Z7a-ty-Qy7.normalTitle" = "Pagina della ESGÖ";
+"Z7a-ty-Qy7.normalTitle" = "Website of the ESGÖ";
 
 /* Class = "IBUINavigationItem"; title = "Über KarmelExerzitien"; ObjectID = "Zce-bx-I0X"; */
-"Zce-bx-I0X.title" = "sugli esercizi";
+"Zce-bx-I0X.title" = "About Carmelite Retreat";
 
 /* Class = "IBUILabel"; text = "Meditationstexte zur Woche:\nP. Jean-Alexandre de Garidel OCD.\n\nSonntagsevangelium gelesen von:\nBurgschauspieler Prof. Bruno Thost. \n\nBildnachweis: Karmeliten in Paris, Bild \"4. Advent\" von Barbara Müller-Walter.\n\nEntwicklung & Programmierung:\nChristoph Ernst Wottawa"; ObjectID = "auQ-TW-iv7"; */
-"auQ-TW-iv7.text" = "Mediazioni della settimana:\nP. Jean-Alexandre de Garidel OCD.\n\nFotografie: Carmelitani di Parigi, Foto \"4a settimana\" di Barbara Müller-Walter.\n\nSviluppo e programmazione:\nChristoph Ernst Wottawa";
+"auQ-TW-iv7.text" = "Texts for the Meditations:\nCarmelites in Paris, Fr. Jean-Alexandre de Garidel OCD.\n\nPhoto Credits:\nCarmelites in Paris, Photo \"4. Advent\" by Barbara Müller-Walter.\n\nDevelopment & programming:\nChristoph Ernst Wottawa";
 
 /* Class = "IBUILabel"; text = "Die Adventzeit ist nun vorüber und hier enden auch unsere Exerzitien."; ObjectID = "awt-Q1-ZqW"; */
-"awt-Q1-ZqW.text" = "L’Avvento è terminato e qui finiscono i nostri esercizi spirituali.";
+"awt-Q1-ZqW.text" = "The season of Advent is over and this ends our retreat.";
 
 /* Class = "IBUILabel"; text = "Kalender"; ObjectID = "bQb-9g-o9s"; */
-"bQb-9g-o9s.text" = "Calendario";
+"bQb-9g-o9s.text" = "Calendar";
 
-/* Class = "IBUILabel"; text = "Advent 2014 mit P. Jacques"; ObjectID = "bsu-Zr-vQy"; */
-"bsu-Zr-vQy.text" = "Avvento 2014 con p. Jacques";
+/* Class = "IBUILabel"; text = "Advent 2014 mit P. Jaques"; ObjectID = "bsu-Zr-vQy"; */
+"bsu-Zr-vQy.text" = "Advent 2014 with Père Jacques";
 
 /* Class = "IBUITabBarItem"; title = "Woche"; ObjectID = "ead-Iu-VLA"; */
-"ead-Iu-VLA.title" = "settimana";
+"ead-Iu-VLA.title" = "Week";
 
 /* Class = "IBUILabel"; text = "Herzlichen Dank!"; ObjectID = "fJN-fl-B4e"; */
-"fJN-fl-B4e.text" = "Grazie di cuore!";
+"fJN-fl-B4e.text" = "Thank you!";
 
 /* Class = "IBUILabel"; text = "Zur Fastenzeit wird es wieder ein Update für die KarmelExerzitien App geben."; ObjectID = "gQJ-HI-jSk"; */
-"gQJ-HI-jSk.text" = "La nostra prossima app uscirà a fine anno: \"STJ500 un anno con Santa Teresa d'Avila\"";
+"gQJ-HI-jSk.text" = "Our next app will appear soon: STJ500 a year with St. Teresa of Avila";
 
 /* Class = "IBUILabel"; text = "Über diese App"; ObjectID = "iq8-Zo-hwm"; */
-"iq8-Zo-hwm.text" = "su questa app";
+"iq8-Zo-hwm.text" = "About this app";
 
 /* Class = "IBUILabel"; text = "Karmeliten in Österreich\nIBAN: AT15 5400 0000 1800 1362\nBIC: OBLAAT2L"; ObjectID = "kge-Gs-qZJ"; */
-"kge-Gs-qZJ.text" = "Carmelitani in Austria\nIBAN: AT15 5400 0000 1800 1362\nBIC: OBLAAT2L";
+"kge-Gs-qZJ.text" = "Carmelites in Austria\nIBAN: AT15 5400 0000 1800 1362\nBIC: OBLAAT2L";
 
 /* Class = "IBUIViewController"; title = "Evangelium"; ObjectID = "mep-tX-42C"; */
-"mep-tX-42C.title" = "Vangelo";
+"mep-tX-42C.title" = "Gospel";
 
 /* Class = "IBUICollectionViewController"; title = "Kalender"; ObjectID = "oM6-hL-NKg"; */
-"oM6-hL-NKg.title" = "calendario";
+"oM6-hL-NKg.title" = "Calendar";
 
 /* Class = "IBUIViewController"; title = "KarmelExerzitien"; ObjectID = "pQD-lO-u6b"; */
-"pQD-lO-u6b.title" = "Esercizi Carmelitani";
+"pQD-lO-u6b.title" = "Carmelite Retreat";
 
 /* Class = "IBUILabel"; text = "Marienschwestern"; ObjectID = "r1C-Bc-5Df"; */
-"r1C-Bc-5Df.text" = "Marienschwestern";
+"r1C-Bc-5Df.text" = "Sisters of Mary of Mount Carmel";
 
 /* Class = "IBUILabel"; text = "Über P. Jacques"; ObjectID = "svZ-6R-0JH"; */
-"svZ-6R-0JH.text" = "su P. Jacques";
+"svZ-6R-0JH.text" = "About Père Jacques";
 
 /* Class = "IBUILabel"; text = "Wir hoffen, dass Ihnen unsere täglichen Impulse gefallen haben und Ihnen geholfen haben, diese Adventzeit bewusster zu erleben und sich in das Geheimnis der Menschwerdung zu vertiefen."; ObjectID = "td1-qp-Leq"; */
-"td1-qp-Leq.text" = "Speriamo che questi impulsi giornalieri vi abbiano aiutato a vivere l’Avvento ed il Natale in modo più profondo.";
+"td1-qp-Leq.text" = "We hope that you have enjoyed our daily inspirations and that they have helped you to experience a more conscious season of Advent and have taken you deeper into the mystery of the incarnation.";
 
 /* Class = "IBUILabel"; text = "Auf Wiedersehen bei den KarmelExerzitien"; ObjectID = "uyg-6z-hDI"; */
-"uyg-6z-hDI.text" = "Arrivederci ai prossimi esercizi carmelitani!";
+"uyg-6z-hDI.text" = "Until the next time - Carmelite retreats";
 
 /* Class = "IBUILabel"; text = "Edith Stein Gesellschaft Österreich"; ObjectID = "w79-6Q-ho1"; */
 "w79-6Q-ho1.text" = "Edith Stein Gesellschaft Österreich";
 
 /* Class = "IBUILabel"; text = "Ein Projekt der Karmeliten in Österreich, der Edith Stein Gesellschaft Österreich und der Marienschwestern vom Karmel.\nBesuchen Sie auch die Webseiten der Organisatoren:"; ObjectID = "wM8-sT-1DX"; */
-"wM8-sT-1DX.text" = "Un progetto dei Carmelitani d’Austria, delle Marienschwestern vom Karmel e della Società Edith Stein d’Austria\nVisitate anche le nostre pagine Web:";
+"wM8-sT-1DX.text" = "A project of the Carmelites in Austria, the Edith Stein Gesellschaft Österreich, and the Sisters of Mary of Mount Carmel. Visit the websites of these organizations:";
 
 /* Class = "IBUINavigationItem"; title = "Über KarmelExerzitien"; ObjectID = "xX1-jl-ryt"; */
-"xX1-jl-ryt.title" = "sugli esercizi carmelitani";
+"xX1-jl-ryt.title" = "About Carmelite Retreat";
 
 /* Class = "IBUILabel"; text = "Gebetsanliegen"; ObjectID = "xoq-sj-4Qu"; */
-"xoq-sj-4Qu.text" = "preghiamo per voi";
+"xoq-sj-4Qu.text" = "Prayer Intentions";
 
 /* Class = "IBUILabel"; text = "Ich will Gott ausstrahlen"; ObjectID = "xs0-uw-L2Y"; */
-"xs0-uw-L2Y.text" = "Desidero irradiare Dio ovunque";
+"xs0-uw-L2Y.text" = "I want to radiate God";
 
 /* Class = "IBUINavigationItem"; title = "Fastenkalender 2014"; ObjectID = "xuc-gj-hMD"; */
-"xuc-gj-hMD.title" = "Calendario di Quaresima 2014";
+"xuc-gj-hMD.title" = "Lenten Calendar 2014";
 
 /* Class = "IBUINavigationItem"; title = "Über P. Jacques"; ObjectID = "yQI-zU-iCZ"; */
-"yQI-zU-iCZ.title" = "su P. Jacques";
+"yQI-zU-iCZ.title" = "About Père Jacques";
 
 /* Class = "IBUILabel"; text = "Helfen Sie uns"; ObjectID = "zYe-zY-UuH"; */
-"zYe-zY-UuH.text" = "donazioni";
+"zYe-zY-UuH.text" = "Help us";
 
 /* Class = "IBUILabel"; text = "Label"; ObjectID = "zkj-g2-HD0"; */
-"zkj-g2-HD0.text" = "etichetta";
+"zkj-g2-HD0.text" = "Label";

@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>5. März</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-    </head>
-    <body>
-        <div class="header">
-            <h1>5. März, Aschermittwoch</h1>
-            <h1 class="caps">Innere Umkehrbewegung</h1>
-        </div>
-        <div>
-            <img src="1.jpg"/>
-        </div>
-        <div class="verse">
-            <p>
-                <verse>
-            </p>
-        </div>
-        <div class="content">
-            <p>
-                "Die erste große Umwandlung vollzog sich in mir, als ich etwa 7 Jahre alt war. Ich wüsste keine äußere Ursache dafür zu nennen. Ich kann es mir nicht anders erklären, als dass damals die Vernunft in mir zur Herrschaft kam... Der alte Eigenwille schien verschwunden, ich war in den folgenden Jahren ein leicht lenksames Kind. Hatte ich mir eine Unfolgsamkeit oder eine ungezogene Antwort erlaubt, so bat ich bald wieder um Verzeihung, obwohl mich das jedes Mal die größte Überwindung kostete, und war glücklich, wenn dann der Friede wieder hergestellt war. Zornesausbrüche kamen kaum noch vor; ich erreichte schon früh eine so große Selbstbeherrschung, dass ich fast ohne Kampf eine gleichmäßige Ruhe bewahren konnte. Wie das geschah, weiß ich nicht; ich glaube aber, dass der Abscheu und die Scham, die ich bei Zornesausbrüchen anderer empfand, das lebhafte Gefühl für die Würdelosigkeit eines solchen Sich Gehen-lassens mich geheilt hat." <br/>
-                <em>Edith Stein Gesamtausgabe 1, 48</em>
-            </p>
-            <p>
-                "Ich wusste von den ersten Lebenstagen an, dass es viel wichtiger sei, gut zu sein als klug."<br/>
-                <em>ESGA 1, 103</em>
-            </p>
-        </div>
-        <div>
-            <img src="1-1.jpg"/>
-        </div>
-        <div class="content">
-            12.10.1891: Als elftes Kind einer jüdischen Holzhändlerfamilie in Breslau geboren.
-        </div>
-    </body>
+
+<head>
+    <title>[week_title]</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>[week_title]</h1>
+        <h2>[impulse_title]</h2>
+    </div>
+    <div class="image">
+        <img src="[image]" />
+    </div>
+    <div class="verse" id="verse">
+        <h3>Meditation der Woche</h3>
+        [impulse]
+    </div>
+    <div class="headline">
+        <a href="javascript:toggle('part1', 'ex1')">
+            <img class="expand" id="ex1" src="plus.png">
+            <h4>[part1_title]</h4></a>
+    </div>
+    <div class="content" id="part1">
+        [part1]
+    </div>
+    
+    <div class="headline">
+        <a href="javascript:toggle('part2', 'ex2')">
+            <img class="expand" id="ex2" src="plus.png">
+            <h4>[part2_title]</h4></a>
+    </div>
+    <div class="content" id="part2">
+        [part2]
+    </div>
+    <div class="headline">
+        <a href="javascript:toggle('part3', 'ex3')">
+            <img class="expand" id="ex3" src="plus.png">
+            <h4>[part3_title]</h4></a>
+    </div>
+    <div class="content" id="part3">
+        [part3]
+    </div>
+    <div class="verse" id="finale">
+        [finale]
+    </div>
+
+</body>
+<script type="text/javascript">
+    function toggle(showHideDiv, switchImgTag) {
+        var ele = document.getElementById(showHideDiv);
+        var image = document.getElementById(switchImgTag);
+        if (ele.style.display == "block") {
+            ele.style.display = "none";
+            image.src = "plus.png";
+        } else {
+            ele.style.display = "block";
+            image.src = "minus.png";
+        }
+    }
+</script>
+
 </html>

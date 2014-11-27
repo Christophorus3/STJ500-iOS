@@ -1,0 +1,121 @@
+/* 
+    Document   : style
+    Created on : 14.02.2014, 15:36:47
+    Author     : chris
+    Description:
+    Purpose of the stylesheet follows.
+*/
+
+
+root { 
+    display: block;
+}
+
+body {
+    margin: 0px;
+    font-family: "Helvetica Neue";
+    font-weight: normal;
+}
+
+div {
+    display: block;
+    text-align: left;
+    font-size: 1.0em;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 150%;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+h1.caps {
+    text-transform: uppercase;
+}
+
+.header {
+    color: white;
+    text-align: right;
+    background-color: rgb(177, 20, 20);
+    /* height: 44px; */
+    /*padding: 20px;*/
+    /*padding-bottom: 10px;*/
+}
+
+.image {
+    text-align: center;
+    overflow: hidden;
+    padding: 0px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.verse {
+    color: #4d4d4d;
+    background-color: #e6e6e6;
+    text-align: left;
+    font-size: 1.0em;
+    padding: 20px;
+    
+}
+
+.verse img {
+    float: right;
+    height: 200px;
+    width: auto;
+    margin: -10px;
+    margin-right: -20px;
+    margin-left: 10px;
+}
+
+.content {
+    background-color: #989898;
+    color: #ffffff;
+    font-size: 1.0em;
+    padding: 20px;
+}
+
+.audio {
+    background-color: rgb(177, 20, 20);
+    color: #ffffff;
+    font-size: 1.0em;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 80px;
+}
+
+.audio img {
+    float: right;
+    height: 100px;
+    width: 100px;
+    margin: -10px;
+    margin-right: -20px;
+    margin-left: 10px;
+}
+
+audio {
+	background-color: #fff;
+	border-color: #aaa;
+	border-width: 1px;
+    width: 100%;
+    height: 20px;
+}
+
+.gospel {
+    background-color: #989898;
+    color: #ffffff;
+}
+
+.gospel i {
+    color: red;
+    font-size: 0.8em;
+    font-style: italic;
+}

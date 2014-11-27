@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Day.h"
 
 @interface KEFetcher : NSObject
 
