@@ -11,13 +11,14 @@
 
 @interface Day : NSObject <NSCoding>
 
+/*
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *headline;
 
 @property (nonatomic) int number;
 
 @property (nonatomic) NSString *lang;
-
+*/
 @property (nonatomic) NSDate *date;
 @property (nonatomic) NSInteger week_id;
 @property (nonatomic) NSString *lit_day;

@@ -28,7 +28,7 @@
 	// Do any additional setup after loading the view.
 	
 	//self.dateLabel.text = [self.day dateDescription];
-	self.dayLabel.text = self.day.name;
+	self.dayLabel.text = self.day.title;
 	
 	isWeekLoaded = NO;
 	isDayLoaded = NO;

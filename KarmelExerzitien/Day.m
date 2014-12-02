@@ -27,7 +27,7 @@
 {
 	self = [super init];
 	if (self) {
-		_lang = [aDecoder decodeObjectForKey:@"lang"];
+		//_lang = [aDecoder decodeObjectForKey:@"lang"];
 		
 		_date = [aDecoder decodeObjectForKey:@"date"];
 		_week_id = [[aDecoder decodeObjectForKey:@"week_id"] integerValue];
@@ -49,7 +49,7 @@
 
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
-	[aCoder encodeObject:_lang forKey:@"lang"];
+	//[aCoder encodeObject:_lang forKey:@"lang"];
 	[aCoder encodeObject:_date forKey:@"date"];
 	[aCoder encodeObject:@(_week_id) forKey:@"week_id"];
 	[aCoder encodeObject:_lit_day forKey:@"lit_day"];
