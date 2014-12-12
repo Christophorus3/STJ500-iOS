@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:KarmelExerzitien.xcodeproj">
+      location = "self:STJ500.xcodeproj">
    </FileRef>
 </Workspace>

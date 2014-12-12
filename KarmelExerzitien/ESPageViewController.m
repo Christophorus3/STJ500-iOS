@@ -149,7 +149,7 @@
 	
 	NSDate *date;
 	
-	int numberOfDays = [self daysBetweenDate:flatNow andDate:end];
+	NSInteger numberOfDays = [self daysBetweenDate:flatNow andDate:end];
 	if (numberOfDays >= 24) {
 		numberOfDays = 24;
 		date = [[NSCalendar currentCalendar] dateByAddingComponents:alarmTime toDate:begin options:0];
