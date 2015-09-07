@@ -10,8 +10,7 @@
 "Gebetsanliegen" = "Prayer Intentions";
 "Ich bitte um Gebet für folgendes Anliegen:" = "I would like prayer for the following intentions:";
 "karmel" = "http://www.carmelitaniscalzi.com/info/en";
-"Day_de" = "Day_en";
-"Week_de" = "Week_en";
+"Calendar" = "Calendar_en";
 "dateFormat" = "MMMM d";
-"KarmelExerzitien-Impuls für Heute verfügbar." = "Carmelite Retreat inspiraiton for today available";
-"Lesen" = "Read";
+"KarmelExerzitien-Impuls für Heute verfügbar." = "St. Teresa Inspiration for the Day";
+"Lesen" = "read";

@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  KarmelExerzitien
+
+  Created by Christoph Wottawa on 15.11.14.
+  Copyright (c) 2014 Christoph Wottawa. All rights reserved.
+*/
+
+"paypal" = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&lc=ES&hosted_button_id=583FUHK8EQFDU";
+"Gebetsanliegen" = "Intenciones de la oración";
+"Ich bitte um Gebet für folgendes Anliegen:" = "Pido una oración por esta intención";
+"karmel" = "http://www.carmelitasdescalzas.net";
+"Calendar" = "Calendar_es";
+"dateFormat" = "d. MMMM";
+"KarmelExerzitien-Impuls für Heute" = "La cita de cada día de S. Teresa";
+"Lesen" = "leer";

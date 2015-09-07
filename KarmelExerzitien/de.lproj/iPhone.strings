@@ -1,0 +1,153 @@
+
+/* Class = "IBUILabel"; text = "oder über Paypal spenden:"; ObjectID = "4wx-j6-4nO"; */
+"4wx-j6-4nO.text" = "oder über Paypal spenden:";
+
+/* Class = "IBUIViewController"; title = "Tag"; ObjectID = "66z-yf-CRt"; */
+"66z-yf-CRt.title" = "Hl. Teresa";
+
+/* Class = "IBUIViewController"; title = "Woche"; ObjectID = "6Fc-Ib-NT4"; */
+"6Fc-Ib-NT4.title" = "Woche";
+
+/* Class = "IBUILabel"; text = "Kontakt"; ObjectID = "6ML-be-NtN"; */
+"6ML-be-NtN.text" = "Kontakt";
+
+/* Class = "IBUITabBarItem"; title = "Tag"; ObjectID = "7WH-sf-ypQ"; */
+"7WH-sf-ypQ.title" = "Hl. Teresa";
+
+/* Class = "IBUIBarButtonItem"; title = "zurück"; ObjectID = "9ie-ba-Z76"; */
+"9ie-ba-Z76.title" = "zurück";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "A4W-1D-bZY"; */
+"A4W-1D-bZY.text" = "Label";
+
+/* Class = "IBUINavigationItem"; title = "KarmelExerzitien"; ObjectID = "Aa3-qX-SFv"; */
+"Aa3-qX-SFv.title" = "STJ500";
+
+/* Class = "IBUILabel"; text = "Die Exerzitien sind kostenlos! Falls Sie uns unterstützen wollen, können Sie Ihre Spende auf dieses Konto überweisen:"; ObjectID = "Am4-GW-UPB"; */
+"Am4-GW-UPB.text" = "Diese App ist kostenlos! Falls Sie uns unterstützen wollen, können Sie Ihre Spende auf dieses Konto überweisen:";
+
+/* Class = "IBUIBarButtonItem"; title = "Kalender"; ObjectID = "CvO-1b-eg7"; */
+"CvO-1b-eg7.title" = "Kalender";
+
+/* Class = "IBUILabel"; text = "uns auf facebook besuchen"; ObjectID = "DQ7-KY-KQj"; */
+"DQ7-KY-KQj.text" = "uns auf facebook besuchen";
+
+/* Class = "IBUILabel"; text = "Karmeliten in Wien"; ObjectID = "Jn6-WS-Cp9"; */
+"Jn6-WS-Cp9.text" = "Karmeliten in Wien";
+
+/* Class = "IBUIButton"; normalTitle = "via Paypal spenden"; ObjectID = "MA2-fW-fxd"; */
+"MA2-fW-fxd.normalTitle" = "via Paypal spenden";
+
+/* Class = "IBUILabel"; text = "Ab dem 30. November finden Sie hier einen täglichen Impuls, bestehend aus Texten des Karmeliten P. Jacques von Jesus (1900-1945) und aus den Evangelien der Liturgie während der Adventzeit 2014."; ObjectID = "OuR-Kf-cpK"; */
+"OuR-Kf-cpK.text" = "Willkommen im Jubiläumsjahr der hl. Teresa von Avila! Ab 1.1.2015 finden Sie hier Texte der Heiligen und das Tagesevangelium zum Nachlesen.";
+
+/* Class = "IBUILabel"; text = "Durch wischen nach links oder rechts können Sie zwischen allen bis zum heutigen Tag erschienen Texten navigieren."; ObjectID = "Pl8-da-jlK"; */
+"Pl8-da-jlK.text" = "Durch wischen nach oben oder unten können Sie zwischen allen bis zum heutigen Tag erschienen Texten navigieren.";
+
+/* Class = "IBUILabel"; text = "Ihre Karmeliten"; ObjectID = "R8e-ZY-lVg"; */
+"R8e-ZY-lVg.text" = "Ihre Karmeliten";
+
+/* Class = "IBUILabel"; text = "Die Online Exerzitien bieten Ihnen jede Woche im Advent eine Meditation über das Sonntagsevangelium und täglich einen kurzen Impuls zur Besinnung. Alle Texte bauen auf Gedanken vom Karmeliten P. Jacques de Jesus auf."; ObjectID = "Te2-G3-qpB"; */
+"Te2-G3-qpB.text" = "Im Jahr 2015 feiert die hl. Teresa von Avila 500 Jahre seit ihrer Geburt am 28.3.1515. Durch dieses Jahr wird uns Teresa selbst mit täglichen Impulsen begleiten – die Zitate sind aus den neuen Übersetzungen ihrer gesamten Werke (Verlag Herder).";
+
+/* Class = "IBUIViewController"; title = "Tag"; ObjectID = "Uqf-v2-Rxq"; */
+"Uqf-v2-Rxq.title" = "Hl. Teresa";
+
+/* Class = "IBUITabBarItem"; title = "Evangelium"; ObjectID = "VsR-gq-xXO"; */
+"VsR-gq-xXO.title" = "Evangelium";
+
+/* Class = "IBUIBarButtonItem"; title = "zurück"; ObjectID = "WV8-R6-NLb"; */
+"WV8-R6-NLb.title" = "zurück";
+
+/* Class = "IBUIViewController"; title = "Über KarmelExerzitien"; ObjectID = "XRx-Jx-H73"; */
+"XRx-Jx-H73.title" = "Über STJ500";
+
+/* Class = "IBUINavigationItem"; title = "KarmelExerzitien"; ObjectID = "Xpj-0c-irk"; */
+"Xpj-0c-irk.title" = "STJ500";
+
+/* Class = "IBUILabel"; text = "Der Karmel"; ObjectID = "Yq3-Lt-CZO"; */
+"Yq3-Lt-CZO.text" = "Teresianischer Karmel";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Menü"; ObjectID = "Z1K-3m-8x3"; */
+"Z1K-3m-8x3.headerTitle" = "Menü";
+
+/* Class = "IBUIButton"; normalTitle = "Website der ESGÖ"; ObjectID = "Z7a-ty-Qy7"; */
+"Z7a-ty-Qy7.normalTitle" = "Website der ESGÖ";
+
+/* Class = "IBUINavigationItem"; title = "Über KarmelExerzitien"; ObjectID = "Zce-bx-I0X"; */
+"Zce-bx-I0X.title" = "Über diese App";
+
+/* Class = "IBUILabel"; text = "Meditationstexte zur Woche:\nP. Jean-Alexandre de Garidel OCD.\n\nSonntagsevangelium gelesen von:\nBurgschauspieler Prof. Bruno Thost. \n\nBildnachweis: Karmeliten in Paris, Bild \"4. Advent\" von Barbara Müller-Walter.\n\nEntwicklung & Programmierung:\nChristoph Ernst Wottawa"; ObjectID = "auQ-TW-iv7"; */
+"auQ-TW-iv7.text" = "Texte:\nDie Zitate sind den Übersetzungen der Werke der hl. Teresa aus dem Verlag Herder entnommen. Die Evangelientexte stammen aus der Einheitsübersetzung der Bibel.\n\nBilder:\nSr. Anna Pointinger, Marienschwestern vom Karmel\n\nEntwicklung und Programmierung:\nChristoph Ernst Wottawa";
+
+/* Class = "IBUILabel"; text = "Die Adventzeit ist nun vorüber und hier enden auch unsere Exerzitien."; ObjectID = "awt-Q1-ZqW"; */
+"awt-Q1-ZqW.text" = "Die Adventzeit ist nun vorüber und hier enden auch unsere Exerzitien.";
+
+/* Class = "IBUILabel"; text = "Kalender"; ObjectID = "bQb-9g-o9s"; */
+"bQb-9g-o9s.text" = "Kalender";
+
+/* Class = "IBUILabel"; text = "Ein Jahr mit Teresa"; ObjectID = "bsu-Zr-vQy"; */
+"bsu-Zr-vQy.text" = "Ein Jahr mit Teresa von Ávila";
+
+/* Class = "IBUITabBarItem"; title = "Woche"; ObjectID = "ead-Iu-VLA"; */
+"ead-Iu-VLA.title" = "Woche";
+
+/* Class = "IBUILabel"; text = "Herzlichen Dank!"; ObjectID = "fJN-fl-B4e"; */
+"fJN-fl-B4e.text" = "Herzlichen Dank!";
+
+/* Class = "IBUILabel"; text = "Unsere nächste App erscheint zum Jahreswechsel:\n\"STJ500 ein Jahr mit Teresa von Avila\""; ObjectID = "gQJ-HI-jSk"; */
+"gQJ-HI-jSk.text" = "Unsere nächste App erscheint zum Jahreswechsel:\n\"STJ500 ein Jahr mit Teresa von Avila\"";
+
+/* Class = "IBUILabel"; text = "Über diese App"; ObjectID = "iq8-Zo-hwm"; */
+"iq8-Zo-hwm.text" = "Über diese App";
+
+/* Class = "IBUILabel"; text = "Karmeliten in Österreich\nIBAN: AT15 5400 0000 1800 1362\nBIC: OBLAAT2L"; ObjectID = "kge-Gs-qZJ"; */
+"kge-Gs-qZJ.text" = "Karmeliten in Österreich\nIBAN: AT15 5400 0000 1800 1362\nBIC: OBLAAT2L";
+
+/* Class = "IBUIViewController"; title = "Evangelium"; ObjectID = "mep-tX-42C"; */
+"mep-tX-42C.title" = "Evangelium";
+
+/* Class = "IBUICollectionViewController"; title = "Kalender"; ObjectID = "oM6-hL-NKg"; */
+"oM6-hL-NKg.title" = "Kalender";
+
+/* Class = "IBUIViewController"; title = "KarmelExerzitien"; ObjectID = "pQD-lO-u6b"; */
+"pQD-lO-u6b.title" = "STJ500";
+
+/* Class = "IBUILabel"; text = "Marienschwestern"; ObjectID = "r1C-Bc-5Df"; */
+"r1C-Bc-5Df.text" = "Marienschwestern";
+
+/* Class = "IBUILabel"; text = "Über P. Jacques"; ObjectID = "svZ-6R-0JH"; */
+"svZ-6R-0JH.text" = "Gebet zum Jubiläum";
+
+/* Class = "IBUILabel"; text = "Wir hoffen, dass Ihnen unsere täglichen Impulse gefallen haben und Ihnen geholfen haben, diese Adventzeit bewusster zu erleben und sich in das Geheimnis der Menschwerdung zu vertiefen."; ObjectID = "td1-qp-Leq"; */
+"td1-qp-Leq.text" = "Wir hoffen, dass Ihnen unsere täglichen Impulse gefallen haben und Ihnen geholfen haben, diese Adventzeit bewusster zu erleben und sich in das Geheimnis der Menschwerdung zu vertiefen.";
+
+/* Class = "IBUILabel"; text = "Auf Wiedersehen bei den KarmelExerzitien"; ObjectID = "uyg-6z-hDI"; */
+"uyg-6z-hDI.text" = "Auf Wiedersehen bei den KarmelExerzitien";
+
+/* Class = "IBUILabel"; text = "Edith Stein Gesellschaft Österreich"; ObjectID = "w79-6Q-ho1"; */
+"w79-6Q-ho1.text" = "Edith Stein Gesellschaft Österreich";
+
+/* Class = "IBUILabel"; text = "Ein Projekt der Karmeliten in Österreich, der Edith Stein Gesellschaft Österreich und der Marienschwestern vom Karmel.\nBesuchen Sie auch die Webseiten der Organisatoren:"; ObjectID = "wM8-sT-1DX"; */
+"wM8-sT-1DX.text" = "Diese App ist eine Zusammenarbeit der Karmeliten in Österreich und Deutschland, mit den Marienschwestern vom Karmel und mit Weitblick Internetwerkstatt – www.weitblick.de";
+
+/* Class = "IBUINavigationItem"; title = "Über KarmelExerzitien"; ObjectID = "xX1-jl-ryt"; */
+"xX1-jl-ryt.title" = "Über STJ500";
+
+/* Class = "IBUILabel"; text = "Gebetsanliegen"; ObjectID = "xoq-sj-4Qu"; */
+"xoq-sj-4Qu.text" = "Gebetsanliegen";
+
+/* Class = "IBUILabel"; text = "STJ500"; ObjectID = "xs0-uw-L2Y"; */
+"xs0-uw-L2Y.text" = "STJ500";
+
+/* Class = "IBUINavigationItem"; title = "Fastenkalender 2014"; ObjectID = "xuc-gj-hMD"; */
+"xuc-gj-hMD.title" = "Fastenkalender 2014";
+
+/* Class = "IBUINavigationItem"; title = "Über P. Jacques"; ObjectID = "yQI-zU-iCZ"; */
+"yQI-zU-iCZ.title" = "Über P. Jacques";
+
+/* Class = "IBUILabel"; text = "Helfen Sie uns"; ObjectID = "zYe-zY-UuH"; */
+"zYe-zY-UuH.text" = "Helfen Sie uns";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "zkj-g2-HD0"; */
+"zkj-g2-HD0.text" = "Label";

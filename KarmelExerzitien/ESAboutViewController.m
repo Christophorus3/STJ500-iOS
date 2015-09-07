@@ -83,6 +83,11 @@
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.marienschwestern.at"]];
 }
 
+- (IBAction)websiteJDO:(id)sender
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.ordensgemeinschaften.at/jahrderorden-aktuelles"]];
+}
+
 - (IBAction)facebookKarmel:(id)sender {
 	
 	NSURL *fbapp = [NSURL URLWithString:@"fb://profile/482656151779152"];

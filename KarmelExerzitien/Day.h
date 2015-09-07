@@ -19,20 +19,24 @@
 
 @property (nonatomic) NSString *lang;
 */
-@property (nonatomic) NSDate *date;
-@property (nonatomic) NSInteger week_id;
-@property (nonatomic) NSString *lit_day;
-@property (nonatomic) NSString *title;
-@property (nonatomic) NSURL *title_image;
-@property (nonatomic) NSString *bible_verse;
-@property (nonatomic) NSString *impulse;
+@property (nonatomic) NSString *date;
+@property (nonatomic) NSString *lit_name;
+@property (nonatomic) NSString *lit_name2;
+@property (nonatomic) NSString *teresa_ref;
+@property (nonatomic) NSString *teresa_short;
+@property (nonatomic) NSString *teresa_text;
+
 @property (nonatomic) NSURL *image;
-@property (nonatomic) NSString *call_gospel;
-@property (nonatomic) NSString *verse_gospel;
-@property (nonatomic) NSString *gospel;
-@property (nonatomic) NSString *gospel_reader;
-@property (nonatomic) NSURL *reader_image;
-@property (nonatomic) NSURL *gospel_audio;
+@property (nonatomic) NSData *imageData;
+
+@property (nonatomic) NSString *bible_ref;
+@property (nonatomic) NSString *bible_text;
+
+@property (nonatomic) NSURL *audio;
+@property (nonatomic) NSString *audio_desc;
+
+@property (nonatomic) NSString *video_ref;
+@property (nonatomic) NSString *video_desc;
 
 - (NSString *)dateDescription;
 

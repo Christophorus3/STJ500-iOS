@@ -11,14 +11,13 @@
 #import "KEFetcher.h"
 
 #import "ESDayViewController.h"
-#import "Week.h"
+
 
 @interface KEContentKit()
 {
 	KEPersistencyManager *persistencyManager;
 	KEFetcher *fetcher;
 	BOOL isOnline;
-	NSMutableArray *weekCache;
 }
 
 @end
@@ -40,15 +39,17 @@
 	self = [super init];
 	
 	if(self) {
-		persistencyManager = [[KEPersistencyManager alloc] init];
-		fetcher = [[KEFetcher alloc] init];
+		//persistencyManager = [[KEPersistencyManager alloc] init];
+		//fetcher = [[KEFetcher alloc] init];
+        
 		
-		weekCache = [NSMutableArray array];
+		//weekCache = [NSMutableArray array];
 		
-		[[NSNotificationCenter defaultCenter] addObserver:self
-												 selector:@selector(downloadData:)
-													 name:@"KEDownloadDayNotification"
-												   object:nil];
+		//[[NSNotificationCenter defaultCenter] addObserver:self
+		//										 selector:@selector(downloadData:)
+		//											 name:@"KEDownloadDayNotification"
+		//										   object:nil];
+        
 	}
 	
 	return self;
@@ -58,92 +59,72 @@
 - (void)downloadData:(NSNotification*)notification
 {
 	ESDayViewController *dayView = [notification userInfo][@"viewController"];
-	NSDate *fetchDate = [notification userInfo][@"date"];
+	NSString *fetchDate = [notification userInfo][@"date"];
 	
 	
 	//dayView.day = [persistencyManager getImage:[coverUrl lastPathComponent]];
 	
 	if(!dayView.day) {
-		
-		PFQuery *query = [PFQuery queryWithClassName:NSLocalizedString(@"Day_de", nil)];
-		[query whereKey:@"date" equalTo:[fetchDate toLocalTime]];
-		query.limit = 1;
-		query.cachePolicy = kPFCachePolicyCacheElseNetwork;
-		
-		__block Day *day = [[Day alloc] init];
-		
-		[query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-			
-			if(!error) {
-				PFObject *object = objects[0];
-				
-				day.date = object[@"date"];
-				day.week_id = [object[@"week_id"] intValue];
-				day.lit_day = object[@"lit_day"];
-				day.title = object[@"title"];
-				PFFile *image = object[@"title_img"];
-				day.title_image = [NSURL URLWithString:[image url]];
-				day.bible_verse = object[@"bible_verse"];
-				day.impulse = object[@"impulse"];
-				day.image = object[@"image"];
-				day.call_gospel = object[@"call_gospel"];
-				day.verse_gospel = object[@"verse_gospel"];
-				day.gospel = object[@"gospel"];
-				day.gospel_reader = object[@"gospel_reader"];
-				day.reader_image = object[@"reader_image"];
-				PFFile *audio = object[@"gospel_audio"];
-				day.gospel_audio = [NSURL URLWithString:[audio url]];
-				
-				dayView.day = day;
-				
-				if(!dayView.week) {
-					//if(weekCache[dayView.day.week_id]) {
-					//	dayView.week = weekCache[dayView.day.week_id];
-					//}
-					
-					PFQuery *query = [PFQuery queryWithClassName:NSLocalizedString(@"Week_de", nil)];
-					[query whereKey:@"week_id" equalTo:@(dayView.day.week_id)];
-					query.cachePolicy = kPFCachePolicyCacheElseNetwork;
-					
-					__block Week *week = [[Week alloc] init];
-					
-					[query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-						
-						if(!error) {
-							PFObject *object = objects[0];
-							
-							week.week_id = [object[@"week_id"] intValue];
-							week.week_title = object[@"week_title"];
-							week.impulse_title = object[@"impulse_title"];
-							week.impulse = object[@"impulse"];
-							PFFile *image = object[@"image"];
-							week.image = [NSURL URLWithString:[image url]];
-							week.image_desc = object[@"image_desc"];
-							week.video_link = object[@"video_link"];
-							week.video_desc = object[@"video_desc"];
-							week.part1_title = object[@"part1_title"];
-							week.part1 = object[@"part1"];
-							week.part2_title = object[@"part2_title"];
-							week.part2 = object[@"part2"];
-							week.part3_title = object[@"part3_title"];
-							week.part3 = object[@"part3"];
-							week.finale = object[@"finale"];
-							
-							//weekCache[dayView.day.week_id] = week;
-							dayView.week = week;
-						}
-					}];
-				}
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            PFQuery *query = [PFQuery queryWithClassName:NSLocalizedString(@"Calendar", nil)];
+            [query whereKey:@"date" equalTo:fetchDate];
+            query.limit = 1;
+            query.cachePolicy = kPFCachePolicyCacheElseNetwork;
+            
+            Day *day = [[Day alloc] init];
+            NSError *error;
+            PFObject *object = [query getFirstObject:&error];
+            
+            if(!error) {
+                //PFObject *object = foundObjects[0];
+                
+                day.date = object[@"date"];
+                
+                day.lit_name = object[@"lit_name"];
+                day.lit_name2 = object[@"lit_name2"];
+                day.teresa_ref = object[@"teresa_ref"];
+                day.teresa_short = object[@"teresa_short"];
+                day.teresa_text = object[@"teresa_text"];
+                
+                day.bible_ref = object[@"bible_ref"];
+                day.bible_text = object[@"bible_text"];
+                
+                /*
+                if(object[@"audio"]) {
+                    PFFile *audio = object[@"audio"];
+                    day.audio = [NSURL URLWithString:[audio url]];
+                    day.audio_desc = object[@"audio_desc"];
+                }*/
+                
+                /*
+                if(object[@"video_ref"]) {
+                    day.video_ref = object[@"video_ref"];
+                    day.video_desc = object[@"video_desc"];
+                }*/
+                
+                PFQuery *query = [PFQuery queryWithClassName:@"Images"];
+                [query whereKey:@"date" equalTo:fetchDate];
+                query.cachePolicy = kPFCachePolicyCacheElseNetwork;
+                PFObject *imageObj = [query getFirstObject];
+                if(imageObj) {
+                    
+                    PFFile *image = imageObj[@"image"];
+                    day.image = [NSURL URLWithString:[image url]];
+                    day.imageData = [image getData];
+                    
+                    dayView.day = day;
+                }
+                
+            }
+            
+            
 
-			}
-		}];
-		
+        });
 	}
-	
-	}
+}
 
 - (void)dealloc {
-	[[NSNotificationCenter defaultCenter] removeObserver:self];
+	//[[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 

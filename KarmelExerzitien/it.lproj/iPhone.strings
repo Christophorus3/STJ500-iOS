@@ -3,7 +3,7 @@
 "4wx-j6-4nO.text" = "o fare un dono con Paypal:";
 
 /* Class = "IBUIViewController"; title = "Tag"; ObjectID = "66z-yf-CRt"; */
-"66z-yf-CRt.title" = "giorno";
+"66z-yf-CRt.title" = "S. Teresa";
 
 /* Class = "IBUIViewController"; title = "Woche"; ObjectID = "6Fc-Ib-NT4"; */
 "6Fc-Ib-NT4.title" = "settimana";
@@ -12,7 +12,7 @@
 "6ML-be-NtN.text" = "Contatto";
 
 /* Class = "IBUITabBarItem"; title = "Tag"; ObjectID = "7WH-sf-ypQ"; */
-"7WH-sf-ypQ.title" = "Giorno";
+"7WH-sf-ypQ.title" = "S. Teresa";
 
 /* Class = "IBUIBarButtonItem"; title = "zurück"; ObjectID = "9ie-ba-Z76"; */
 "9ie-ba-Z76.title" = "indietro";
@@ -21,10 +21,10 @@
 "A4W-1D-bZY.text" = "etichetta";
 
 /* Class = "IBUINavigationItem"; title = "KarmelExerzitien"; ObjectID = "Aa3-qX-SFv"; */
-"Aa3-qX-SFv.title" = "esercizi carmelitani";
+"Aa3-qX-SFv.title" = "STJ500";
 
 /* Class = "IBUILabel"; text = „Die Exerzitien sind kostenlos! Falls Sie uns unterstützen wollen, können Sie Ihre Spende auf dieses Konto überweisen:"; ObjectID = "Am4-GW-UPB"; */
-"Am4-GW-UPB.text" = "Questi esercizi sono gratis! Se volete sostenerci con una donazione, potete fare un versamento su questo conto:";
+"Am4-GW-UPB.text" = "Questa app è gratis! Se volete darci un aiuto, potete fare una donazione su questo conto bancario:";
 
 /* Class = "IBUILabel"; text = "Label"; ObjectID = "Au0-uf-QLb"; */
 "Au0-uf-QLb.text" = "etichetta";
@@ -42,19 +42,19 @@
 "MA2-fW-fxd.normalTitle" = "fare un dono con Paypal";
 
 /* Class = "IBUILabel"; text = "Ab dem 30. November finden Sie hier einen täglichen Impuls, bestehend aus Texten des Karmeliten P. Jacques von Jesus (1900-1945) und aus den Evangelien der Liturgie während der Adventzeit 2014."; ObjectID = "OuR-Kf-cpK"; */
-"OuR-Kf-cpK.text" = "A partire dal 30 novembre troverete qui un impulso giornaliero con testi di p. Jacques di Gesù (1900-194) e del Vangelo per tutto l’Avvento 2014.";
+"OuR-Kf-cpK.text" = "A partire dall'1 gennaio troverete qui ogni giorno un testo di S. Teresa d'Avila ed un passaggio del Vangelo per seguire l'anno giubilare per i 500 anni della nascita di S. Teresa (1515-2015).";
 
 /* Class = "IBUILabel"; text = "Durch wischen nach links oder rechts können Sie zwischen allen bis zum heutigen Tag erschienen Texten navigieren."; ObjectID = "Pl8-da-jlK"; */
-"Pl8-da-jlK.text" = "Glissando a destra e a sinistra sullo schermo potete leggere i testi apparsi finora.";
+"Pl8-da-jlK.text" = "Facendo scorrere il dito all'insù e all'ingiù potete passare al giorno precedente o seguente.";
 
 /* Class = "IBUILabel"; text = "Ihre Karmeliten"; ObjectID = "R8e-ZY-lVg"; */
 "R8e-ZY-lVg.text" = "i carmelitani scalzi";
 
 /* Class = "IBUILabel"; text = "Die Online Exerzitien bieten Ihnen jede Woche im Advent eine Meditation über das Sonntagsevangelium und täglich einen kurzen Impuls zur Besinnung. Alle Texte bauen auf Gedanken vom Karmeliten P. Jacques de Jesus auf."; ObjectID = "Te2-G3-qpB"; */
-"Te2-G3-qpB.text" = "Gli esercizi carmelitani vi propongono ogni settimana d’Avvento una mediazione sul Vangelo della domenica ed ogni giorno un impulso per la preghiera personale. I testi si basano su pensieri del carmelitano scalzo p. Jacques di Gesù.";
+"Te2-G3-qpB.text" = "Durante tutto l'anno giubilare per i 500 anni della nascita di S. Teresa d'Avila (1515-2015) troverete qui ogni giorno un testo della Santa ed un passaggio del Vangelo quotidiano.";
 
 /* Class = "IBUIViewController"; title = "Tag"; ObjectID = "Uqf-v2-Rxq"; */
-"Uqf-v2-Rxq.title" = "giorno";
+"Uqf-v2-Rxq.title" = "S. Teresa";
 
 /* Class = "IBUILabel"; text = "Label"; ObjectID = "VXc-Pt-YLZ"; */
 "VXc-Pt-YLZ.text" = "etichetta";
@@ -66,13 +66,13 @@
 "WV8-R6-NLb.title" = "indietro";
 
 /* Class = "IBUIViewController"; title = "Über KarmelExerzitien"; ObjectID = "XRx-Jx-H73"; */
-"XRx-Jx-H73.title" = "sugli esercizi";
+"XRx-Jx-H73.title" = "Su questa app";
 
 /* Class = "IBUINavigationItem"; title = "KarmelExerzitien"; ObjectID = "Xpj-0c-irk"; */
 "Xpj-0c-irk.title" = "Esercizi Carmelitani";
 
 /* Class = "IBUILabel"; text = "Der Karmel"; ObjectID = "Yq3-Lt-CZO"; */
-"Yq3-Lt-CZO.text" = "il Carmelo";
+"Yq3-Lt-CZO.text" = "Carmelo Teresiano";
 
 /* Class = "IBUITableViewSection"; headerTitle = "Menü"; ObjectID = "Z1K-3m-8x3"; */
 "Z1K-3m-8x3.headerTitle" = "Menu";
@@ -81,10 +81,10 @@
 "Z7a-ty-Qy7.normalTitle" = "Pagina della ESGÖ";
 
 /* Class = "IBUINavigationItem"; title = "Über KarmelExerzitien"; ObjectID = "Zce-bx-I0X"; */
-"Zce-bx-I0X.title" = "sugli esercizi";
+"Zce-bx-I0X.title" = "Su questa app";
 
 /* Class = "IBUILabel"; text = "Meditationstexte zur Woche:\nP. Jean-Alexandre de Garidel OCD.\n\nSonntagsevangelium gelesen von:\nBurgschauspieler Prof. Bruno Thost. \n\nBildnachweis: Karmeliten in Paris, Bild \"4. Advent\" von Barbara Müller-Walter.\n\nEntwicklung & Programmierung:\nChristoph Ernst Wottawa"; ObjectID = "auQ-TW-iv7"; */
-"auQ-TW-iv7.text" = "Mediazioni della settimana:\nP. Jean-Alexandre de Garidel OCD.\n\nFotografie: Carmelitani di Parigi, Foto \"4a settimana\" di Barbara Müller-Walter.\n\nSviluppo e programmazione:\nChristoph Ernst Wottawa";
+"auQ-TW-iv7.text" = "Testi:\nI testi di S. Teresa sono estratti dalle sue opere (Edizioni OCD) secondo una  selezione di p. Ulrich Dobhan ocd\nLa traduzione dei vangeli è quella della CEI (2008)\n\nImmagini:\nSr. Anna Pointinger, Sorelle di Maria del Monte Carmelo, Linz\n\nSviluppo e programmazione:\nChristoph Ernst Wottawa";
 
 /* Class = "IBUILabel"; text = "Die Adventzeit ist nun vorüber und hier enden auch unsere Exerzitien."; ObjectID = "awt-Q1-ZqW"; */
 "awt-Q1-ZqW.text" = "L’Avvento è terminato e qui finiscono i nostri esercizi spirituali.";
@@ -93,7 +93,7 @@
 "bQb-9g-o9s.text" = "Calendario";
 
 /* Class = "IBUILabel"; text = "Advent 2014 mit P. Jacques"; ObjectID = "bsu-Zr-vQy"; */
-"bsu-Zr-vQy.text" = "Avvento 2014 con p. Jacques";
+"bsu-Zr-vQy.text" = "Un anno con Teresa d'Avila";
 
 /* Class = "IBUITabBarItem"; title = "Woche"; ObjectID = "ead-Iu-VLA"; */
 "ead-Iu-VLA.title" = "settimana";
@@ -117,13 +117,13 @@
 "oM6-hL-NKg.title" = "calendario";
 
 /* Class = "IBUIViewController"; title = "KarmelExerzitien"; ObjectID = "pQD-lO-u6b"; */
-"pQD-lO-u6b.title" = "Esercizi Carmelitani";
+"pQD-lO-u6b.title" = "STJ500";
 
 /* Class = "IBUILabel"; text = "Marienschwestern"; ObjectID = "r1C-Bc-5Df"; */
 "r1C-Bc-5Df.text" = "Marienschwestern";
 
 /* Class = "IBUILabel"; text = "Über P. Jacques"; ObjectID = "svZ-6R-0JH"; */
-"svZ-6R-0JH.text" = "su P. Jacques";
+"svZ-6R-0JH.text" = "Preghiera a s. Teresa";
 
 /* Class = "IBUILabel"; text = "Wir hoffen, dass Ihnen unsere täglichen Impulse gefallen haben und Ihnen geholfen haben, diese Adventzeit bewusster zu erleben und sich in das Geheimnis der Menschwerdung zu vertiefen."; ObjectID = "td1-qp-Leq"; */
 "td1-qp-Leq.text" = "Speriamo che questi impulsi giornalieri vi abbiano aiutato a vivere l’Avvento ed il Natale in modo più profondo.";
@@ -135,22 +135,22 @@
 "w79-6Q-ho1.text" = "Edith Stein Gesellschaft Österreich";
 
 /* Class = "IBUILabel"; text = "Ein Projekt der Karmeliten in Österreich, der Edith Stein Gesellschaft Österreich und der Marienschwestern vom Karmel.\nBesuchen Sie auch die Webseiten der Organisatoren:"; ObjectID = "wM8-sT-1DX"; */
-"wM8-sT-1DX.text" = "Un progetto dei Carmelitani d’Austria, delle Marienschwestern vom Karmel e della Società Edith Stein d’Austria\nVisitate anche le nostre pagine Web:";
+"wM8-sT-1DX.text" = "Questo progetto nasce da una collaborazione dei Carmelitani Teresiani d'Austria e del Veneto (www.carmeloveneto.it), della congregazione Marienschwestern vom Karmel e della società Weitblick Internetwerkstatt – www.weitblick.de";
 
 /* Class = "IBUINavigationItem"; title = "Über KarmelExerzitien"; ObjectID = "xX1-jl-ryt"; */
-"xX1-jl-ryt.title" = "sugli esercizi carmelitani";
+"xX1-jl-ryt.title" = "su STJ500";
 
 /* Class = "IBUILabel"; text = "Gebetsanliegen"; ObjectID = "xoq-sj-4Qu"; */
 "xoq-sj-4Qu.text" = "preghiamo per voi";
 
 /* Class = "IBUILabel"; text = "Ich will Gott ausstrahlen"; ObjectID = "xs0-uw-L2Y"; */
-"xs0-uw-L2Y.text" = "Desidero irradiare Dio ovunque";
+"xs0-uw-L2Y.text" = "STJ500";
 
 /* Class = "IBUINavigationItem"; title = "Fastenkalender 2014"; ObjectID = "xuc-gj-hMD"; */
 "xuc-gj-hMD.title" = "Calendario di Quaresima 2014";
 
 /* Class = "IBUINavigationItem"; title = "Über P. Jacques"; ObjectID = "yQI-zU-iCZ"; */
-"yQI-zU-iCZ.title" = "su P. Jacques";
+"yQI-zU-iCZ.title" = "Preghiera a s. Teresa";
 
 /* Class = "IBUILabel"; text = "Helfen Sie uns"; ObjectID = "zYe-zY-UuH"; */
 "zYe-zY-UuH.text" = "donazioni";

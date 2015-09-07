@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  KarmelExerzitien
+
+  Created by Christoph Wottawa on 15.11.14.
+  Copyright (c) 2014 Christoph Wottawa. All rights reserved.
+*/
+
+"paypal" = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&lc=HR&hosted_button_id=583FUHK8EQFDU";
+"Gebetsanliegen" = "Vaše molbe za molitvenu pomoć";
+"Ich bitte um Gebet für folgendes Anliegen:" = "Molim molitvu na ovu nakanu:";
+"karmel" = "http://www.karmel.hr";
+"Calendar" = "Calendar_hr";
+
+"dateFormat" = "d. MMMM";
+"KarmelExerzitien-Impuls für Heute" = "Poticaj sv. Terezije za ovaj dan";
+"Lesen" = "čitanje";

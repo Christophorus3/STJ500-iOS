@@ -13,12 +13,19 @@
 
 - (NSString *)dateDescription {
 	
-	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-	[formatter setLocale:[NSLocale currentLocale]];
-	[formatter setTimeZone:[NSTimeZone systemTimeZone]];
-	[formatter setDateFormat:@"EEEE, d. MMMM"];
+	NSDateFormatter *readFormatter = [[NSDateFormatter alloc] init];
+	[readFormatter setLocale:[NSLocale currentLocale]];
+	[readFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+	[readFormatter setDateFormat:@"yyyy-MM-dd"];
+    NSDate *date = [readFormatter dateFromString:self.date];
 	
-	NSString *result = [formatter stringFromDate:self.date];
+    NSDateFormatter *writeFormatter = [[NSDateFormatter alloc] init];
+    [writeFormatter setLocale:[NSLocale currentLocale]];
+    [writeFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+    [writeFormatter setDateStyle:NSDateFormatterFullStyle];
+    //[writeFormatter setDateFormat:@"EEEE, d. MMMM"];
+
+    NSString *result = [writeFormatter stringFromDate:date];
 	return result;
 }
 
@@ -30,19 +37,25 @@
 		//_lang = [aDecoder decodeObjectForKey:@"lang"];
 		
 		_date = [aDecoder decodeObjectForKey:@"date"];
-		_week_id = [[aDecoder decodeObjectForKey:@"week_id"] integerValue];
-		_lit_day = [aDecoder decodeObjectForKey:@"lit_day"];
-		_title = [aDecoder decodeObjectForKey:@"title"];
-		_title_image = [aDecoder decodeObjectForKey:@"title_image"];
-		_bible_verse = [aDecoder decodeObjectForKey:@"bible_verse"];
-		_impulse = [aDecoder decodeObjectForKey:@"impulse"];
+		
+		_lit_name = [aDecoder decodeObjectForKey:@"lit_name"];
+        _lit_name2 = [aDecoder decodeObjectForKey:@"lit_name"];
+        
+        _teresa_ref = [aDecoder decodeObjectForKey:@"teresa_ref"];
+        _teresa_short = [aDecoder decodeObjectForKey:@"teresa_short"];
+        _teresa_text = [aDecoder decodeObjectForKey:@"teresa_text"];
+        
 		_image = [aDecoder decodeObjectForKey:@"image"];
-		_call_gospel = [aDecoder decodeObjectForKey:@"call_gospel"];
-		_verse_gospel = [aDecoder decodeObjectForKey:@"verse_gospel"];
-		_gospel = [aDecoder decodeObjectForKey:@"gospel"];
-		_gospel_reader = [aDecoder decodeObjectForKey:@"gospel_reader"];
-		_reader_image = [aDecoder decodeObjectForKey:@"reader_image"];
-		_gospel_audio = [aDecoder decodeObjectForKey:@"gospel_audio"];
+        _imageData = [aDecoder decodeObjectForKey:@"imageDate"];
+		
+        _bible_ref = [aDecoder decodeObjectForKey:@"bible_ref"];
+        _bible_text = [aDecoder decodeObjectForKey:@"bible_text"];
+        
+        _audio = [aDecoder decodeObjectForKey:@"audio"];
+        _audio_desc = [aDecoder decodeObjectForKey:@"audio_desc"];
+        
+        _video_ref = [aDecoder decodeObjectForKey:@"video_ref"];
+        _video_desc = [aDecoder decodeObjectForKey:@"video_desc"];
 	}
 	return self;
 }
@@ -51,20 +64,26 @@
 {
 	//[aCoder encodeObject:_lang forKey:@"lang"];
 	[aCoder encodeObject:_date forKey:@"date"];
-	[aCoder encodeObject:@(_week_id) forKey:@"week_id"];
-	[aCoder encodeObject:_lit_day forKey:@"lit_day"];
-	[aCoder encodeObject:_title forKey:@"title"];
-	[aCoder encodeObject:_title_image forKey:@"title_image"];
-	[aCoder encodeObject:_bible_verse forKey:@"bible_verse"];
-	[aCoder encodeObject:_impulse forKey:@"impulse"];
-	[aCoder encodeObject:_image forKey:@"image"];
-	[aCoder encodeObject:_call_gospel forKey:@"call_gospel"];
-	[aCoder encodeObject:_verse_gospel forKey:@"verse_gospel"];
-	[aCoder encodeObject:_gospel forKey:@"gospel"];
-	[aCoder encodeObject:_gospel_reader forKey:@"gospel_reader"];
-	[aCoder encodeObject:_reader_image forKey:@"reader_image"];
-	[aCoder encodeObject:_gospel_audio forKey:@"gospel_audio"];
 	
+    [aCoder encodeObject:_lit_name forKey:@"lit_name"];
+    [aCoder encodeObject:_lit_name2 forKey:@"lit_name2"];
+    
+    [aCoder encodeObject:_teresa_ref forKey:@"teresa_ref"];
+    [aCoder encodeObject:_teresa_short forKey:@"teresa_short"];
+    [aCoder encodeObject:_teresa_text forKey:@"teresa_text"];
+    
+    [aCoder encodeObject:_image forKey:@"image"];
+    [aCoder encodeObject:_imageData forKey:@"imageData"];
+    
+    [aCoder encodeObject:_bible_ref forKey:@"bible_ref"];
+    [aCoder encodeObject:_bible_text forKey:@"bible_text"];
+    
+    [aCoder encodeObject:_audio forKey:@"audio"];
+    [aCoder encodeObject:_audio_desc forKey:@"audio_desc"];
+    
+    [aCoder encodeObject:_video_ref forKey:@"video_ref"];
+    [aCoder encodeObject:_video_desc forKey:@"video_desc"];
+    
 }
 
 @end

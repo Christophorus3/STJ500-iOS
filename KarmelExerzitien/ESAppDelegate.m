@@ -14,20 +14,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-	//if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
-		//UIColor *purple = [UIColor colorWithRed:200/255.0f green:202/255.0f blue:235/255.0f alpha:1.0f];
+	if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
+		UIColor *purple = [UIColor colorWithRed:122/255.0f green:2/255.0f blue:51/255.0f alpha:1.0f];
 		//[[UINavigationBar appearance] setBarTintColor:purple];
 		//[[UITabBar appearance] setBarTintColor:purple];
-	//}
+        [self.window setTintColor:purple];
+	}
 	
 	//Start Parse:
-	[Parse setApplicationId:@"UCTuKq4fUkpZamBZEdbfxkmD7VDOFO6NeiYhMPX5"
-				  clientKey:@"UZCjN468y2bkewA2TL3DsL1X5yYIVRTbBCfHSIFQ"];
+	[Parse setApplicationId:@"JVnm7CPwU4b0h0g15SLOnD6bQsm2q3ZTy8ONqF1O"
+				  clientKey:@"CVkXbq6tPmfJm9hzhIRMjp3S77glxmFjnpSJZrJq"];
 	
-	UILocalNotification *localNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+	application.applicationIconBadgeNumber = 0;
+    
+    UILocalNotification *localNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
     if (localNotification) {
         // Set icon badge number to zero
-		application.applicationIconBadgeNumber = 0;
+		//application.applicationIconBadgeNumber = 0;
 	
 		[application cancelLocalNotification:localNotification];
     }

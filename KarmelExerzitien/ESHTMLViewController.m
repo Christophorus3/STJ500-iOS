@@ -23,6 +23,7 @@
 	// Do any additional setup after loading the view.
 	//NSURLRequest *request = [NSURLRequest requestWithURL:self.contentURL];
 	//NSString *contentString = [NSString stringWithContentsOfURL:self.contentURL usedEncoding:nil error:nil];
+    _webView.delegate = self;
 	[self.webView loadHTMLString:self.content baseURL:self.contentURL];
 	
 	[self updateContentInsetsForInterfaceOrientation:self.interfaceOrientation];

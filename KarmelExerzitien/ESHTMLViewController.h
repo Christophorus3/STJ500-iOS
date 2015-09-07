@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ESHTMLViewController : UIViewController
+@interface ESHTMLViewController : UIViewController<UIWebViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UIWebView *webView;
 

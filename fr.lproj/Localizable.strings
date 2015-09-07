@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  KarmelExerzitien
+
+  Created by Christoph Wottawa on 15.11.14.
+  Copyright (c) 2014 Christoph Wottawa. All rights reserved.
+*/
+
+"paypal" = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&lc=FR&hosted_button_id=583FUHK8EQFDU";
+"Gebetsanliegen" = "Intention de prière";
+"Ich bitte um Gebet für folgendes Anliegen:" = "Je demande une prière pour cette intention:";
+"karmel" = "http://www.carmel.asso.fr";
+"Calendar" = "Calendar_fr";
+
+"dateFormat" = "d. MMMM";
+"KarmelExerzitien-Impuls für Heute" = "Citation quotidienne de sainte Thérèse";
+"Lesen" = "lire";

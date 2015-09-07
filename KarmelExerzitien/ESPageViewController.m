@@ -37,9 +37,9 @@
 	NSDateComponents *compsBegin = [[NSDateComponents alloc] init];
 	//compsBegin.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
 	compsBegin.timeZone = [NSTimeZone localTimeZone];
-	compsBegin.day = 30;
-	compsBegin.month = 11;
-	compsBegin.year = 2014;
+	compsBegin.day = 01;
+	compsBegin.month = 01;
+	compsBegin.year = 2015;
 	compsBegin.hour = 0;
 	compsBegin.minute = 0;
 	
@@ -48,9 +48,9 @@
 	NSDateComponents *compsEnd = [[NSDateComponents alloc] init];
 	//compsEnd.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
 	compsEnd.timeZone = [NSTimeZone localTimeZone];
-	compsEnd.day = 24;
+	compsEnd.day = 31;
 	compsEnd.month = 12;
-	compsEnd.year = 2014;
+	compsEnd.year = 2015;
 	compsEnd.hour = 0;
 	compsEnd.minute = 0;
 	
@@ -75,7 +75,7 @@
 				  completion:nil];
 	
 	
-	[self setLocalNotifications];
+	//[self setLocalNotifications];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
