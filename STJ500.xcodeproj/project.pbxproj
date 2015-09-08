@@ -11,6 +11,7 @@
 		3E21AFF01A3EDE77005318D6 /* JahrDerOrden Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E21AFEF1A3EDE77005318D6 /* JahrDerOrden Logo.png */; };
 		3E21AFF21A3EFA47005318D6 /* teresaofavila.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E21AFF11A3EFA47005318D6 /* teresaofavila.jpg */; };
 		3E21AFF71A3F30C4005318D6 /* teresa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E21AFF91A3F30C4005318D6 /* teresa.jpg */; };
+		3E29E8FC1B9DC3D3008A2113 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E29E8FB1B9DC3D3008A2113 /* AVFoundation.framework */; };
 		3E324F971A3FAC1A00FA1622 /* Teresa_von_Avila.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E324F961A3FAC1A00FA1622 /* Teresa_von_Avila.jpg */; };
 		3E9B351D1AA0C644009055A1 /* KAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9B351C1AA0C644009055A1 /* KAboutViewController.m */; };
 		3EB7D6291A3F6111004927F5 /* jdo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EB7D6281A3F6111004927F5 /* jdo.jpg */; };
@@ -105,6 +106,7 @@
 		3E21AFFB1A3F30CA005318D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = en; path = en.lproj/teresa.jpg; sourceTree = "<group>"; };
 		3E21AFFC1A3F30CB005318D6 /* it */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = it; path = it.lproj/teresa.jpg; sourceTree = "<group>"; };
 		3E21AFFE1A3F31B0005318D6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = de; path = de.lproj/teresa.html; sourceTree = "<group>"; };
+		3E29E8FB1B9DC3D3008A2113 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3E324F8D1A3FA92500FA1622 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = en; path = en.lproj/stylepjacques.css; sourceTree = "<group>"; };
 		3E324F8E1A3FA92600FA1622 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = de; path = de.lproj/stylepjacques.css; sourceTree = "<group>"; };
 		3E324F8F1A3FA92700FA1622 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = it; path = it.lproj/stylepjacques.css; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E29E8FC1B9DC3D3008A2113 /* AVFoundation.framework in Frameworks */,
 				8371862219B6055900154D0A /* SystemConfiguration.framework in Frameworks */,
 				8371861E19B6054000154D0A /* Security.framework in Frameworks */,
 				8371861C19B6053400154D0A /* QuartzCore.framework in Frameworks */,
@@ -323,6 +326,7 @@
 		83BABDA41897AC5C008CDF5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3E29E8FB1B9DC3D3008A2113 /* AVFoundation.framework */,
 				8371862119B6055900154D0A /* SystemConfiguration.framework */,
 				8371861D19B6054000154D0A /* Security.framework */,
 				8371861B19B6053400154D0A /* QuartzCore.framework */,
@@ -515,6 +519,9 @@
 					83BABDA11897AC5C008CDF5B = {
 						DevelopmentTeam = 273HCU2MFM;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.InAppPurchase = {
 								enabled = 0;
 							};
@@ -780,8 +787,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Roberto PIrastu (8Y934D4L7D)";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Karmel in Oesterreich";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Karmel in Oesterreich";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -821,8 +828,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Karmel in Oesterreich";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Karmel in Oesterreich";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -857,7 +864,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				"LIBRARY_SEARCH_PATHS[arch=*]" = Parse;
 				PRODUCT_NAME = STJ500;
-				PROVISIONING_PROFILE = "6e8e9994-f270-47b2-a35c-dde128e8bbe8";
+				PROVISIONING_PROFILE = "3107b965-37f2-45bd-b38b-365d084b7baa";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -867,7 +874,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -879,7 +886,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				"LIBRARY_SEARCH_PATHS[arch=*]" = Parse;
 				PRODUCT_NAME = STJ500;
-				PROVISIONING_PROFILE = "6e8e9994-f270-47b2-a35c-dde128e8bbe8";
+				PROVISIONING_PROFILE = "3107b965-37f2-45bd-b38b-365d084b7baa";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

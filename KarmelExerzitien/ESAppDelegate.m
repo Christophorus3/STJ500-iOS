@@ -20,6 +20,17 @@
 		//[[UITabBar appearance] setBarTintColor:purple];
         [self.window setTintColor:purple];
 	}
+    
+    //Set the AudioSessio to Playback, to enable background audio from the WebView
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    BOOL ok;
+    NSError *setCategoryError = nil;
+    ok = [audioSession setCategory:AVAudioSessionCategoryPlayback error:&setCategoryError];
+    
+    if(!ok) {
+        NSLog(@"%s setCategoryError = %@", __PRETTY_FUNCTION__, setCategoryError);
+    }
+    
 	
 	//Start Parse:
 	[Parse setApplicationId:@"JVnm7CPwU4b0h0g15SLOnD6bQsm2q3ZTy8ONqF1O"
